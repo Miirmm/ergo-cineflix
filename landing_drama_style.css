@@ -10,7 +10,7 @@ body {
   .navbar-custom {
     background-color: rgba(23, 23, 23, 0.786) !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%; /* Prend toute la largeur */
     z-index: 1000; /* S'assure que la navbar est au-dessus du contenu */
@@ -64,6 +64,10 @@ body {
     background-color: rgb(70, 159, 14);
     border-color: rgb(70, 159, 14);
   }
+  .test{
+    margin: auto;
+    text-align: center;
+  }
   
   /** FIN BOUTON CONNEXION ***/
   @media (max-width: 992px) {
@@ -77,6 +81,7 @@ body {
 
   h1{
     font-family: Mulish, sans-serif;
+    font-size: 3rem;
     text-align: center;
     color:white;
   }
@@ -84,6 +89,14 @@ body {
   .description_genre{
     font-family: Raleway, sans-serif;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color:white;
   }
+
+  .arriere_plan{
+    background-image: url(img/joker_escalier_arriere_plan.jpg);
+    background-size: cover;
+    
+  }
+
+ 
