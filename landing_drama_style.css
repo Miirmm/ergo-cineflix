@@ -77,8 +77,13 @@ body {
 
   h1{
     font-family: Mulish, sans-serif;
+    text-align: center;
+    color:white;
   }
 
   .description_genre{
     font-family: Raleway, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    color:white;
   }
