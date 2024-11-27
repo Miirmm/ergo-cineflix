@@ -93,10 +93,24 @@ body {
     color:white;
   }
 
+  .titre{
+    font-family: Raleway, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+  }
+
   .arriere_plan{
     background-image: url(img/joker_escalier_arriere_plan.jpg);
     background-size: cover;
     
+  }
+
+  .font_noir{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 2rem;
+  }
+  .font_blanc{
+    background-color: rgb(255, 255,255);
   }
 
  
