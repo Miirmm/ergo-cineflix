@@ -1,0 +1,201 @@
+*{
+    font-family: "Mulish", sans-serif;
+}
+
+.hero-banner {
+    background-image: url(../img/foggy-autumn-night.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+
+}
+.hero-container {
+    height: 100vh;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: max-content !important;
+    padding-bottom: 64px !important;
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: rgb(220, 145, 5);
+    scale: 0.7;
+}
+
+.bouton-abonnez {
+    background-color: red;
+    border-radius: 15px;
+    word-wrap: normal;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.img-logo {
+    height: auto;
+    width: 10%;
+}
+
+.center-slider {
+    margin: auto;
+}
+
+.center-slider img {
+    width: 60%;
+}
+.div-bande-section{
+    width: 100%;
+    height: 15rem;
+    background: url("../img/ligne-sang-removebg-preview.png");
+
+}
+.section-avantage{
+    background-image: url("https://img.freepik.com/free-vector/realistic-foggy-background_52683-73669.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+}
+.list-avantage{
+    margin: auto;
+}
+.list-avantage li{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+.list-avantage i{
+    margin-right:   2rem;
+}
+.div-liste-avantages{
+    width: 75%;
+    font-size: 1.2rem;
+    margin-left: 3rem;
+    border-radius: 15px;
+    padding: .5rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    margin: auto;
+    margin-top: 2rem;
+}
+.p-avantage{
+    width: 50%;
+    font-size: 1.2rem;
+    margin-left: 3rem;
+    border-radius: 15px;
+    padding: .5rem;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+.span-avantage{
+    width: 40%;
+    font-size: 1.2rem;
+    margin-left: 3rem;
+    border-radius: 15px;
+    padding: .5rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.div-avis{
+    display: flex;
+    justify-content: space-around;
+}
+.div-avis-1, .div-avis-2{
+    width: 40%;
+    background-color: rgba(245, 245, 245, 0.06);
+    border-radius: 15px;
+    padding: .5rem;
+}
+.div-avis-3{
+    width: 50%;
+    margin: auto;
+    margin-top: 4rem;
+    background-color: rgba(245, 245, 245, 0.06);
+    border-radius: 15px;
+    padding: .5rem;
+}
+/*css acordéon*/
+.pane.active {
+    flex-grow: 10;
+    max-width: 100%;
+
+    .background {
+        transform: scale(1.25, 1.25);
+    }
+
+    .label {
+        @media (min-width: 640px) {
+            transform: translateX(0.5rem);
+        }
+
+        .content > * {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .shadow {
+        opacity: 0.75;
+        transform: translateY(0);
+    }
+}
+/*fin accordeon*/
+.bg-action{
+    background-image: url("https://cdn.prod.website-files.com/60e1f68bc720984ae7e18521/615ad783364b43028e3ecbbe_top-5-films-action-confinement.jpeg");
+}
+.bg-drama{
+    background-image: url("https://i.etsystatic.com/16821137/r/il/d3e3fa/2543823557/il_570xN.2543823557_l7p3.jpg");
+}
+.bg-sf{
+    background-image: url("https://m.media-amazon.com/images/I/81Bd9H3HP1L._AC_UF1000,1000_QL80_.jpg");
+}
+.bg-romance{
+    background-image: url("https://marketplace.canva.com/EAEbjqnSMXI/1/0/1131w/canva-rose-couple-romantique-film-affiche-gTGc5FRqzok.jpg");
+}
+.bg-humour{
+    background-image: url("https://media.senscritique.com/media/000004683476/300/bienvenue_chez_les_ch_tis.jpg");
+}
+.title-autres-categories{
+    text-align: center;
+    color: white;
+}
+.section-bonus{
+    background-image: url("https://cdn.pixabay.com/photo/2022/04/26/11/29/smoke-7158160_1280.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+}
+.div-carte-cm{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4rem;
+}
+.div-carte-cm-btm{
+    padding-bottom: 4rem;
+}
+.video{
+    margin: auto;
+}
+@media screen and (max-width: 768px) {
+    .div-carte-cm{
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 0;
+    }
+    .div-carte-cm-btm{
+        margin-bottom: 0;
+        padding: 0;
+        padding-bottom: 4rem;
+    }
+    .div-carte-unit{
+        margin-top: 1rem;
+    }
+}
