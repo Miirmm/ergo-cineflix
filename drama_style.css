@@ -119,6 +119,51 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     margin-bottom: 2rem;
   }
+
+  .pseudo{
+    color:rgba(0,0,0,0.5);
+    
+  }
+
+  .centerBtn {
+    display: flex;
+    margin: auto;
+  }
+
+  /** FOOTERRRR **/
+
+.rsxx {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.rsxx:hover {
+  color: rgb(70, 159, 14);
+  font-size: 2rem;
+}
+
+.infoo {
+  color: #fff;
+  text-decoration: none;
+}
+
+.infoo:hover {
+  color: #fff;
+  text-decoration: underline rgb(70, 159, 14) 3px;
+}
+
+.contactt {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contactt:hover {
+  color: #fff;
+  text-decoration: underline rgb(70, 159, 14) 3px;
+}
+
+/** FIN FOOTERRRR **/
+
   
 
  
