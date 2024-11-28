@@ -318,7 +318,7 @@ h3 {
 
 /* Section Films en vedette */
 
-.films_en_vedette h2{
+.films_en_vedette h2 {
     font-size: 4.5rem;
     font-family: 'Mulish', 'sans-serif';
     color: #54F98D;
@@ -333,7 +333,7 @@ h3 {
     margin: 0 auto;
 }
 
-.container_film_caroussel{
+.container_film_caroussel {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -366,7 +366,7 @@ h3 {
 
 /* offres_d'abonnement */
 
-.offres_abonnement h2{
+.offres_abonnement h2 {
     font-size: 4.5rem;
     font-family: 'Mulish', 'sans-serif';
     color: #54F98D;
@@ -376,34 +376,34 @@ h3 {
 }
 
 
-.offres_abonnement{
+.offres_abonnement {
     text-align: center;
     margin-top: 5rem;
 }
 
-.p_offres{
+.p_offres {
     margin-bottom: 1rem;
 }
 
-.h3_red{
+.h3_red {
     color: red;
 }
 
-.h3_orange{
+.h3_orange {
     color: orange;
 }
 
-.h3_yellow{
+.h3_yellow {
     color: yellow;
 }
 
-.h3_green{
+.h3_green {
     color: green;
 }
 
 /*Avis Client*/
 
-.avis_client h2{
+.avis_client h2 {
     font-size: 4.5rem;
     font-family: 'Mulish', 'sans-serif';
     color: #54F98D;
@@ -412,36 +412,41 @@ h3 {
     text-align: center;
 }
 
-.client_1{
-    font-size: 1.7rem;
-    font-weight: 800;
-}
-.client_2{
-    font-size: 1.7rem;
-    font-weight: 800;
-}
-.client_3{
-    font-size: 1.7rem;
-    font-weight: 800;
-}
-.client_4{
+.client_1 {
     font-size: 1.7rem;
     font-weight: 800;
 }
 
-.avis_client_p{
+.client_2 {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.client_3 {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.client_4 {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.avis_client_p {
     font-size: 1rem;
     font-weight: 800;
     margin-bottom: 2.5rem;
 }
 
-.col-12 ,.col-md-6 ,.col-lg-3{
+.col-12,
+.col-md-6,
+.col-lg-3 {
     margin-bottom: 2rem;
 }
 
 /* Autres catégorie */
 
-.Tuiles_de_categories h2{
+.Tuiles_de_categories h2 {
     font-size: 4.5rem;
     font-family: 'Mulish', 'sans-serif';
     color: #54F98D;
@@ -450,29 +455,32 @@ h3 {
     text-align: center;
 }
 
-.action_h3{
+.action_h3 {
     font-size: 1.7rem;
     font-weight: 900;
     color: rgb(124, 17, 17);
     text-shadow: 0 0 20px rgb(124, 17, 17), 0 0 30px rgb(124, 17, 17), 0 0 50px rgb(124, 17, 17);
 }
-.horreur_h3{
+
+.horreur_h3 {
     font-size: 1.7rem;
     font-weight: 900;
     color: rgb(255, 165, 0);
-    text-shadow:  0 0 20px rgb(255, 165, 0), 0 0 30px rgb(255, 165, 0), 0 0 50px rgb(255, 165, 0);
+    text-shadow: 0 0 20px rgb(255, 165, 0), 0 0 30px rgb(255, 165, 0), 0 0 50px rgb(255, 165, 0);
 }
-.romance_h3{
+
+.romance_h3 {
     font-size: 1.7rem;
     font-weight: 900;
     color: rgb(39, 76, 200);
-    text-shadow:  0 0 20px rgb(39, 76, 200), 0 0 30px rgb(39, 76, 200), 0 0 50px rgb(39, 76, 200);
+    text-shadow: 0 0 20px rgb(39, 76, 200), 0 0 30px rgb(39, 76, 200), 0 0 50px rgb(39, 76, 200);
 }
-.drama_h3{
+
+.drama_h3 {
     font-size: 1.7rem;
     font-weight: 900;
     color: rgb(70, 159, 14);
-    text-shadow:  0 0 20px rgb(70, 159, 14), 0 0 30px rgb(70, 159, 14), 0 0 50px rgb(70, 159, 14);
+    text-shadow: 0 0 20px rgb(70, 159, 14), 0 0 30px rgb(70, 159, 14), 0 0 50px rgb(70, 159, 14);
 }
 
 
@@ -548,19 +556,55 @@ h3 {
 
 .cta-button-drama:hover {
     color: #fff;
-    background-color: rgb(111, 255, 22);
+    background-color: rgb(112, 252, 25);
     box-shadow: 0 0 20px rgb(70, 159, 14), 0 0 30px rgb(70, 159, 14), 0 0 50px rgb(70, 159, 14);
 }
 
+/* Bénéfices d'un abonnement */
 
-/* Footer */
-
-footer {
-    background-color: #000;
-    color: #fff;
+.benefice_d-un_abonnement h2 {
+    font-size: 4.5rem;
+    font-family: 'Mulish', 'sans-serif';
+    color: #54F98D;
+    margin-top: 5.8rem;
+    margin-bottom: 5rem;
     text-align: center;
-    padding: 20px;
 }
+
+
+/** FOOTERRRR **/
+
+.rsxx {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.rsxx:hover {
+    color: #54F98D;
+    font-size: 2rem;
+}
+
+.infoo {
+    color: #fff;
+    text-decoration: none;
+}
+
+.infoo:hover {
+    color: #fff;
+    text-decoration: underline #54F98D 3px;
+}
+
+.contactt {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contactt:hover {
+    color: #fff;
+    text-decoration: underline #54F98D 3px;
+}
+
+/** FIN FOOTERRRR **/
 
 /* Responsive design */
 @media (max-width: 768px) {
