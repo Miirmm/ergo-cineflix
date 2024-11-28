@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CinéFlix - Découvrez les meilleurs films d'action et bien plus encore. Abonnez-vous pour une expérience cinématographique inoubliable."
+    />
+    <!-- Balises Open Graph pour les réseaux sociaux -->
+    <meta
+      property="og:title"
+      content="CinéFlix - Plongez au cœur de l'action"
+    />
+    <meta
+      property="og:description"
+      content="Regardez les meilleurs films d'action sur CinéFlix. Abonnez-vous pour une expérience cinématographique inégalée !"
+    />
+    <meta property="og:image" content="#" />
+    <!-- Chemin vers une image de partage -->
+    <meta property="og:url" content="https://www.cine-flix.fr/action" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CinéFlix" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="CinéFlix - Plongez au cœur de l'action"
+    />
+    <meta
+      name="twitter:description"
+      content="Découvrez une sélection explosive de films d'action. Abonnez-vous dès maintenant sur CinéFlix."
+    />
+    <meta name="twitter:image" content="hero-action.jpg" />
+    <meta name="twitter:site" content="https://www.cine-flix.fr/action" />
+
+    <title>CinéFlix - Action</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/logo.png" />
+    <!---------------------------------------------------------- Lien AOS ------------------------------------------------------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!---------------------------------------------------------- Lien bootsrap ------------------------------------------------------------------->
+
+    <script
+      src="https://kit.fontawesome.com/cd8dd3426c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/action.css" />
+
+    <!-- LIENS DES FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!------------------------------------------------------------- NAVBAR --------------------------------------------------------------------------------------------->
+    <nav
+      class="navbar bg-dark navbar-expand-lg bg-body-tertiary navbar-custom"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo.png" alt="Bootstrap" width="auto" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html"
+                >Accueil
+              </a>
+            </li>
+            <li
+              class="nav-link disabled trait"
+              aria-disabled="true"
+              style="color: white"
+            >
+              |
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active actioncolor"
+                aria-current="page"
+                href="action.html"
+                >Action</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active horrorcolor"
+                aria-current="page"
+                href="horreur.html"
+                >Horreur</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active comediecolor"
+                aria-current="page"
+                href="comedie.html"
+                >Comédie</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active scificolor" aria-current="page" href="science_fiction.html"
+                >Science-Fiction</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active dramacolor" aria-current="page" href="drama_index.html"
+                >Drama</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active romancecolor"
+                aria-current="page"
+                href="romance.html"
+                >Romance</a
+              >
+            </li>
+          </ul>
+          <a href="connexion.html"><button class="btn btncnx" type="button">Connexion</button></a>
+        </div>
+      </div>
+    </nav>
+    <!------------------------------------------------------------- FIN NAVBAR --------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------- SECTION HERO --------------------------------------------------------------------------------------------->
+    <div class="parallax">
+      <!---------------------------------------------------- FOG --------------------------------------------------------------->
+       <img
+        class="foggy-background"
+        src="https://www.transparentpng.com/thumb/fog/fog-png-pictures-4.png"
+      />
+
+      <!---------------------------------------------------- FIN FOG --------------------------------------------------------------->
+      <div class="text-container">
+        <h1
+          class="hero-title animate__animated animate__pulse animate__infinite animate__slow 3s"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          Plongez au cœur de l'action
+        </h1>
+        <p
+          class="hero-description"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          Découvrez les plus grands blockbusters et laissez-vous emporter par
+          l'adrénaline !
+        </p>
+        <a href="#abonnement"><button
+          class="btn btn-outline-dark btnabbonner animate__animated animate__pulse animate__infinite animate__slow 3s"
+          type="button"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <i class="fa-solid fa-ticket ticket"></i> Je m'abonne
+        </button></a>
+      </div>
+    </div>
+    <!------------------------------------------------------------- FIN SECTION --------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------- FIN SECTION --------------------------------------------------------------------------------------------->
+     <!----------------------------------------------------------------  SECTION PRESENTATION --------------------------------------------------------------------------------------->
+  <!----------------------------------------------------------------  SECTION PRESENTATION --------------------------------------------------------------------------------------->
+  <section class="reviews-section py-1 sectionadr" style="background-color: #1c1c1c;">
+    <div class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh; position: relative;">
+  
+      <!-- Vidéo -->
+      <div class="col-md-12 d-flex justify-content-center align-items-center">
+        <div class="video-container" data-aos="fade-up" style="position: relative;">
+          <div class="video-overlay"></div>
+          <video autoplay muted loop style="width: 100%; height: auto;">
+            <source src="../img/fastfr.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la vidéo.
+          </video>
+        </div>
+      </div>
+  
+      <section class="reviews-section py-1 filmss" >
+        <div class="container">
+          <div class="row align-items-center" style="min-height: 100vh;">
+            <!-- Carousel à gauche -->
+            <div class="col-md-6" >
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="width: 100%;">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="../img/slide1.jpg" class="d-block w-100" alt="Films d'action récents">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../img/slide2.jpg" class="d-block w-100" alt="Films à couper le souffle">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../img/slide3.jpg" class="d-block w-100" alt="Films d'action">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../img/slide4.jpg" class="d-block w-100" alt="Films explosifs">
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Texte et bouton à droite -->
+            <div class="col-md-6 text-white text-center" data-aos="fade-up">
+              <h2 class="mb-4">Découvrez l'adrénaline des films d'action</h2>
+              <p class="mb-4">
+                Plongez dans un monde où le suspense et l’excitation règnent. Découvrez une sélection incroyable de films d’action qui vous tiendront en haleine.
+              </p>
+              <p class="mb-5">
+                En vous abonnant, accédez à un large éventail de classiques et de nouveautés qui promettent des sensations fortes.
+              </p>
+              <a href="#abonnement" class="btn btn-danger text-uppercase px-4 py-2">Je m'abonne</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+   
+<div class="parallaxv" style="min-height: 100px;"></div>
+  <!----------------------------------------------------------------  FIN SECTION PRESENTATION --------------------------------------------------------------------------------------->
+  <!----------------------------------------------------------------  FIN SECTION PRESENTATION --------------------------------------------------------------------------------------->
+
+
+    <!---------------------------------------------------------------- SECTION FILMS POPULAIRES --------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------- SECTION FILMS POPULAIRES --------------------------------------------------------------------------------------->
+    <section class="filmpop py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 title-av" data-aos="fade-up">
+          Films Vedettes
+        </h2>
+        <p class="text-center mb-5" data-aos="fade-up">
+          Découvrez les films d'action les plus populaires du moment. Pour en
+          savoir plus, abonnez-vous dès maintenant !
+        </p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Film 1 -->
+          <div class="col">
+            <div
+              class="card h-100"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <img src="../img/300.jpg" class="card-img-top" alt="300" />
+              <div class="card-body">
+                <h5 class="card-title">300</h5>
+                <p class="card-text">
+                  Plongez dans une épopée légendaire où 300 Spartiates, menés
+                  par le roi Léonidas, affrontent des milliers de soldats perses
+                  dans une bataille héroïque pour la liberté.
+                </p>
+                <button
+                  class="btn btn-outline-danger btn-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#trailer1"
+                >
+                  Voir la bande-annonce
+                </button>
+                <div id="trailer1" class="collapse mt-2">
+                  <iframe
+                    width="100%"
+                    height="200"
+                    src="https://www.youtube.com/embed/1R2HpgDVrFc?si=lJe8DjHWDCHKpm47"
+                    title="Bande-annonce"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#abonnement"><button class="btn btn-danger w-100">Je m'abonne</button></a>
+              </div>
+            </div>
+          </div>
+          <!-- Film 2 -->
+          <div class="col">
+            <div
+              class="card h-100"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <img
+                src="../img/deadpoolw.jpg"
+                class="card-img-top"
+                alt="Deadpool et Wolverine"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Deadpool et Wolverine</h5>
+                <p class="card-text">
+                  Le duo explosif que tout le monde attendait : Deadpool,
+                  l'anti-héros insolent, et Wolverine, le mutant immortel,
+                  unissent leurs forces pour une aventure remplie d'humour noir
+                  et d'action brutale.
+                </p>
+                <button
+                  class="btn btn-outline-danger btn-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#trailer2"
+                >
+                  Voir la bande-annonce
+                </button>
+                <div id="trailer2" class="collapse mt-2">
+                  <iframe
+                    width="100%"
+                    height="200"
+                    src="https://www.youtube.com/embed/JTKsxKbF58M?si=Mo_DCJNsfIz_ndQv"
+                    title="Bande-annonce"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#abonnement"><button class="btn btn-danger w-100">Je m'abonne</button></a>
+              </div>
+            </div>
+          </div>
+          <!-- Film 3 -->
+          <div class="col">
+            <div
+              class="card h-100"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <img
+                src="../img/edge-tomorrow.jpg"
+                class="card-img-top"
+                alt="Edge Tomorrow"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Edge Tomorrow</h5>
+                <p class="card-text">
+                  Un soldat inexpérimenté, pris dans une boucle temporelle,
+                  revit sans cesse la même bataille contre une invasion
+                  extraterrestre, découvrant ainsi comment sauver l'humanité.
+                </p>
+                <button
+                  class="btn btn-outline-danger btn-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#trailer3"
+                >
+                  Voir la bande-annonce
+                </button>
+                <div id="trailer3" class="collapse mt-2">
+                  <iframe
+                    width="100%"
+                    height="200"
+                    src="https://www.youtube.com/embed/NYtObD3aAZs?si=plqEe0w2rUty69Bi"
+                    title="Bande-annonce"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#abonnement"><button class="btn btn-danger w-100">Je m'abonne</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Film 4 -->
+          <div class="col">
+            <div
+              class="card h-100"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <img
+                src="../img/vendetta.jpg"
+                class="card-img-top"
+                alt="V pour Vendetta"
+              />
+              <div class="card-body">
+                <h5 class="card-title">V pour Vendetta</h5>
+                <p class="card-text">
+                  Dans un futur dystopique, un mystérieux justicier masqué connu
+                  sous le nom de 'V' mène une révolution contre un régime
+                  totalitaire, incarnant la lutte pour la liberté et la justice.
+                </p>
+                <button
+                  class="btn btn-outline-danger btn-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#trailer4"
+                >
+                  Voir la bande-annonce
+                </button>
+                <div id="trailer4" class="collapse mt-2">
+                  <iframe
+                    width="100%"
+                    height="200"
+                    src="https://www.youtube.com/embed/hmbQgEHGpLg?si=JySeqVpX1OUTVY7-"
+                    title="Bande-annonce"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#abonnement"><button class="btn btn-danger w-100">Je m'abonne</button></a>
+              </div>
+            </div>
+          </div>
+          <!-- Film 5 -->
+          <div class="col">
+            <div
+              class="card h-100"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <img
+                src="../img/matrix.jpg"
+                class="card-img-top"
+                alt="Film Matrix"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Matrix</h5>
+                <p class="card-text">
+                  Découvrez la réalité cachée : un monde où l'humanité est
+                  prisonnière d'une simulation, et où un élu, Neo, doit libérer
+                  l'esprit humain.
+                </p>
+                <button
+                  class="btn btn-outline-danger btn-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#trailer5"
+                >
+                  Voir la bande-annonce
+                </button>
+                <div id="trailer5" class="collapse mt-2">
+                  <iframe
+                    width="100%"
+                    height="200"
+                    src="https://www.youtube.com/embed/8xx91zoASLY?si=Ab5UmGD6UVtFhSCJ"
+                    title="Bande-annonce"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#abonnement"><button class="btn btn-danger w-100">Je m'abonne</button></a>
+              </div>
+            </div>
+          </div>
+          <!-- Film 6 -->
+          <div class="col">
+            <div
+              class="card h-100"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <img src="../img/taken.jpg" class="card-img-top" alt="Taken" />
+              <div class="card-body">
+                <h5 class="card-title">Taken</h5>
+                <p class="card-text">
+                  Un ex-agent secret, Bryan Mills, utilise ses compétences
+                  mortelles pour retrouver sa fille kidnappée, déclenchant une
+                  chasse à l'homme pleine d'action. </p>
+                  <button
+                    class="btn btn-outline-danger btn-sm"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#trailer6"
+                  >
+                    Voir la bande-annonce
+                  </button>
+                </p>
+
+                <div id="trailer6" class="collapse mt-2">
+                  <iframe
+                    width="100%"
+                    height="200"
+                    src="https://www.youtube.com/embed/pPi3ZAYev0k?si=2BVhkNPq4i25eKvS"
+                    title="Bande-annonce"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="#abonnement"><button class="btn btn-danger w-100">Je m'abonne</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="parallaxv"></div>
+    <!---------------------------------------------------------------- FIN SECTION FILMS POPULAIRES --------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------- FIN SECTION FILMS POPULAIRES --------------------------------------------------------------------------------------->
+     <!-------------------------------------------------------------  SECTION AVANTAGES --------------------------------------------------------------------------------------------->
+     <section class="sectionav" style="background-color: #201f1f;">
+      <div class="container text-center" >
+        <h2 class="title-av" data-aos="fade-up">Pourquoi choisir CinéFlix ?</h2>
+        <p class="descr-av" data-aos="fade-up" data-aos-delay="200">
+          Plongez dans l’univers du cinéma avec CinéFlix ! Accédez à un
+          <strong class="gras">catalogue varié</strong> en
+          <strong class="gras">HD et 4K</strong>, sans interruption
+          publicitaire, et découvrez les
+          <strong class="gras">dernières nouveautés</strong> chaque semaine.
+          Vivez une expérience immersive sur tous vos appareils. Découvrez les
+          avantages exclusifs de notre plateforme et plongez dans une expérience
+          cinématographique exceptionnelle.
+        </p>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div
+              class="card"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <div class="avantage-icon">
+                <i class="fas fa-infinity"></i>
+              </div>
+
+              <div class="card-body">
+                <h5 class="titlecrd">Accès illimité</h5>
+                <p class="card-textt">
+                  Explorez un catalogue riche avec des milliers de films et
+                  séries, accessibles 24/7.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <div class="avantage-icon">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="titlecrd">Nouveautés hebdomadaires</h5>
+                <p class="card-textt">
+                  Chaque semaine, découvrez les dernières sorties et les
+                  contenus exclusifs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <div class="avantage-icon">
+                <i class="fas fa-ban"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="titlecrd">Visionnage sans pub</h5>
+                <p class="card-textt">
+                  Profitez de vos films et séries préférés sans aucune
+                  interruption publicitaire.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!------------------------------------------------------------------------ DEUXIEME ROW ----------------------------------------------------------------------------------->
+        <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 20px;">
+          <div class="col">
+            <div
+              class="card"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <div class="avantage-icon">
+                <i class="fa-solid fa-download"></i>
+              </div>
+
+              <div class="card-body">
+                <h5 class="titlecrd">Mode hors-ligne</h5>
+                <p class="card-textt">
+                  Téléchargez vos films et séries pour les regarder où que vous soyez, même sans connexion.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <div class="avantage-icon">
+                <i class="fa-brands fa-gratipay"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="titlecrd" >Recommandations </h5>
+                <p class="card-textt">
+                  Des suggestions adaptées à vos goûts pour un visionnage parfait.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <div class="avantage-icon">
+                <i class="fa-solid fa-link-slash"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="titlecrd">Sans engagement</h5>
+                <p class="card-textt">
+                  Profitez de votre abonnement en toute liberté, sans aucun engagement ni contrainte.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="parallaxv" style="min-height: 20px;"></div>
+    <!---------------------------------------------------------------- FIN SECTION AVANTAGES --------------------------------------------------------------------------------------->
+      <!----------------------------------------------------------------  SECTION AVIS CLIENTS --------------------------------------------------------------------------------------->         <!----------------------------------------------------------------  SECTION AVIS CLIENTS --------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------  SECTION AVIS CLIENTS --------------------------------------------------------------------------------------->
+
+    <section class="reviews-section py-5 ">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="text-uppercase title-av" data-aos="fade-up">Avis de nos utilisateurs</h2>
+          <p style="color: #d3d3d3; font-size: 1.2rem;"data-aos="fade-up">Découvrez ce que nos abonnés pensent de CinéFlix.</p>
+        </div>
+            <div id="carouselReviews" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!-- Avis 1 -->
+                <div class="carousel-item active">
+                  <div class="card review-card mx-auto" style="background-color: #ffffff; color: #000000; max-width: 600px;">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Maria Jeanne</h5>
+                      <p class="card-text"style="color:black;">
+                        « Super expérience avec CinéFlix ! J'adore la diversité des films proposés, en particulier les classiques d'action. »
+                      </p>
+                      <div class="stars">
+                        <i class="fas fa-star" style="color: #ffdd00;"></i>
+                        <i class="fas fa-star" style="color: #ffdd00;"></i>
+                        <i class="fas fa-star" style="color: #ffdd00;"></i>
+                        <i class="fas fa-star" style="color: #ffdd00;"></i>
+                        <i class="fas fa-star-half-alt" style="color: #ffdd00;"></i>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent text-center">
+                      <small style="color: #888;">Publié le 05 janvier 2024</small>
+                    </div>
+                  </div>
+                </div>
+                <!-- Avis 2 -->
+                <div class="carousel-item">
+                  <div class="card review-card mx-auto" style="background-color: #ffffff; color: #000000; max-width: 600px;">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Lucas Martinez</h5>
+                      <p class="card-text" style="color: #000;">
+                        « La qualité 4K est incroyable. Les nouveautés chaque semaine sont un vrai plus. » 
+                      </p>
+                      <div class="stars">
+                        <i class="fas fa-star" style="color: #ffdd00;"></i>
+                        <i class="fas fa-star" style="color: #ffdd00;"></i>
+                        <i class="fas fa-star" style="color: #ffdd00;"></i>
+                        <i class="fas fa-star" style="color: #ffdd00;"></i>
+                        <i class="far fa-star" style="color: #ffdd00;"></i>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent text-center">
+                      <small style="color: #888;">Publié le 20 novembre 2024</small>
+                    </div>
+                  </div>
+                </div>
+                <!-- Avis 3 -->
+                <div class="carousel-item">
+                  <div class="card review-card mx-auto" style="background-color: #ffffff; color: #d3d3d3; max-width: 600px;">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Sophie Johns</h5>
+                      <p class="card-text"style="color: #000;">
+                        « Très satisfaite ! Plus de publicités, et une interface fluide. Je recommande vivement. »
+                      </p>
+                      <div class="stars">
+                        <i class="fas fa-star" style="color: #ffdd00;"></i>
+                        <i class="fas fa-star" style="color: #ffdd00;"></i>
+                        <i class="fas fa-star" style="color: #ffdd00;"></i>
+                        <i class="fas fa-star-half-alt" style="color: #ffdd00;"></i>
+                        <i class="far fa-star" style="color: #ffdd00;"></i>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent text-center">
+                      <small style="color: #888;">Publié le 5 decembre 2023</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Contrôles du carousel -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviews" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselReviews" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </section>
+        
+      </div>
+    </section>
+
+
+<div class="parallaxv"></div>
+
+
+
+  <!----------------------------------------------------------------  FIN SECTION AVIS CLIENTS --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------- FIN SECTION AVIS CLIENTS --------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------  SECTION ABONNEMENT --------------------------------------------------------------------------------------->
+     <!----------------------------------------------------------------  SECTION ABONNEMENT --------------------------------------------------------------------------------------->
+     <section class="pricing-section py-5" style="background-color: #201f1f;">
+      <div class="container"id="abonnement">
+        <div class="text-center mb-5">
+          <h2 class="text-center mb-4 title-av" data-aos="fade-up">
+            Nos offres d'abonnement
+          </h2>
+          <p style="color: #ffffff;font-size: 1.2rem;"data-aos="fade-up">
+            Choisissez l'abonnement qui vous convient et plongez dans un monde de divertissement.
+             Que ce soit pour un visionnage occasionnel ou une expérience illimitée,
+               nos offres sont adaptées à vos besoins, sans engagement.
+          </p>
+        </div>
+        <div class="row g-4">
+          <!-------------------------------------- Abonnement Essentiel ------------------------------------------------->
+          <div class="col-md-4"data-aos="flip-left"
+          data-aos-delay="50"
+          data-aos-duration="1000">
+            <div class="card border-danger mb-3" style="max-width: 18rem; background-color: #ffffff; color: #ffffff;">
+              <div class="card-header bg-transparent border-danger" style="color: #e81e1e; text-align: center; font-size: 2rem; font-weight: bolder;">Essentiel</div>
+              <div class="card-body text-danger" style="font-size: 1.3rem;">
+                <h5 class="card-title">4.99€/mois</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-3">
+
+                    <p><i class="fa-solid fa-check fa-beat" style="color: #db2929;"></i>  Qualité HD</p>
+                  </li>
+                  <li class="mb-3">
+                    <p><i class="fa-solid fa-x fa-fade" style="color: #db2929;"></i> Accès limité</p> 
+                  </li>
+                  <li class="mb-3">
+                    <p><i class="fa-solid fa-x fa-fade" style="color: #db2929;"></i> Pas de multi-écran</p> 
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent border-danger"style="align-items: center; text-align: center;">
+                <a href=" inscription.html"><button class="btn btn-outline-danger" style=" width: 200px; ">Souscrire</button></a>
+              </div>
+            </div>
+          </div>
+          <!------------------------------------- Abonnement Standard ------------------------------------------------->
+          <div class="col-md-4"data-aos="flip-left"
+          data-aos-delay="50"
+          data-aos-duration="1000">
+            <div class="card border-danger mb-3" style="max-width: 18rem; background-color: #511e1e; color: #ffffff;">
+              <div class="card-header bg-transparent border-danger" style="color: #ffffff; text-align: center; font-size: 2rem; font-weight: bolder;">Standard</div>
+              <div class="card-body text-danger" style="font-size: 1.3rem;">
+                <h5 class="card-title" style="color: #ffffff;">9.99€/mois</h5>
+                <ul class="list-unstyled"style="color: #ffffff;">
+                  <li class="mb-3">
+
+                    <p><i class="fa-solid fa-check fa-beat" style="color: #ffffff;"></i>  Qualité FULL HD</p>
+                  </li>
+                  <li class="mb-3">
+                    <p><i class="fa-solid fa-check fa-beat" style="color: #ffffff;"></i> Catalogue étendu</p> 
+                  </li>
+                  <li class="mb-3">
+                    <p><i class="fa-solid fa-check fa-beat" style="color: #ffffff;"></i> 2 écran</p> 
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent border-danger" style="align-items: center; text-align: center;">
+                <a href=" inscription.html"><button class="btn btn-outline-danger" style=" width: 200px; ">Souscrire</button></a>
+              </div>
+            </div>
+          </div>
+          <!--------------------------------------------- Abonnement Premium -------------------------------------------------->
+          <div class="col-md-4" style="align-items: center;" data-aos="flip-left"
+          data-aos-delay="50"
+          data-aos-duration="1000">
+            <div class="card border-danger mb-3" style="max-width: 18rem; background-color: #000000; color: #ffffff;">
+              <div class="card-header bg-transparent border-danger" style="color: #e81e1e; text-align: center; font-size: 2rem; font-weight: bolder;">Premium</div>
+              <div class="card-body text-danger" style="font-size: 1.3rem;">
+                <h5 class="card-title">14.99€/mois</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-3">
+
+                    <p><i class="fa-solid fa-check fa-beat" style="color: #db2929;"></i>  Qualité 4K</p>
+                  </li>
+                  <li class="mb-3">
+                    <p><i class="fa-solid fa-check fa-beat" style="color: #db2929;"></i> Catalogue complet</p> 
+                  </li>
+                  <li class="mb-3">
+                    <p><i class="fa-solid fa-check fa-beat" style="color: #db2929;"></i> 4 écran</p> 
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent border-danger" style="align-items: center; text-align: center;">
+                <a href=" inscription.html"><button class="btn btn-outline-danger" style=" width: 200px; ">Souscrire</button></a>
+              </div>
+            </div>
+         </div>
+        </div>
+      </div>
+     </section>
+     
+     <div class="parallaxv"></div>
+     <!----------------------------------------------------------------  FIN SECTION ABONNEMENT --------------------------------------------------------------------------------------->
+     <!----------------------------------------------------------------  FIN SECTION ABONNEMENT --------------------------------------------------------------------------------------->
+
+  <!---------------------------------------------------------------- FIN SECTION AVIS CLIENTS --------------------------------------------------------------------------------------->
+  <!----------------------------------------------------------------  FIN SECTION AVIS CLIENTS --------------------------------------------------------------------------------------->
+  <section class="py-5" style="background-color: #1c1c1c;">
+    <div class="container text-center">
+      <h2 class=" mb-5 title-av" data-aos="fade-up">Explorez nos autres genres</h2>
+      <div class="row g-4">
+        <!-- Genre 1: Romance -->
+        <div class="col-md-4">
+          <a href="romance.html" class="tile d-flex justify-content-center align-items-center" style="background-image: url('../img/romancemovies.jpg');">
+            <h3>Romance</h3>
+          </a>
+        </div>
+        <!-- Genre 2: Science-Fiction -->
+        <div class="col-md-4">
+          <a href="science_fiction.html" class="tile d-flex justify-content-center align-items-center" style="background-image: url('../img/scifi.jpg');">
+            <h3>Science-Fiction</h3>
+          </a>
+        </div>
+        <!-- Genre 3: Comédie -->
+        <div class="col-md-4">
+          <a href="landing.html" class="tile d-flex justify-content-center align-items-center" style="background-image: url('../img/bestcomedy.jpg');">
+            <h3>Comédie</h3>
+          </a>
+        </div>
+      </div>
+      <div class="row g-4 mt-4">
+        <!-- Genre 4: Horreur -->
+        <div class="col-md-6">
+          <a href="horreur.html" class="tile d-flex justify-content-center align-items-center" style="background-image: url('../img/horror.png'); ">
+            <h3>Horreur</h3>
+          </a>
+        </div>
+        <!-- Genre 5: Drame -->
+        <div class="col-md-6">
+          <a href="drama_index.html" class="tile d-flex justify-content-center align-items-center" style="background-image: url('../img/drama.jpg');">
+            <h3>Drame</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="parallaxv" style="min-height: 100px;"></div>
+
+  <!--------------------------------------------------------------------------------------------- FOOTERRRRR ------------------------------------------------>
+  <footer class=" py-4" style="background-color: #1c1c1c; color: #ffffff; text-align: center;" >
+    <div class="container">
+      <div class="row">
+        <!-- Section Contact -->
+        <div class="col-md-4 mb-3">
+          <h5 style="color: #ffffff; font-size: 1.7rem;  font-family: Raleway, serif;">Contact</h5>
+          <ul class="list-unstyled">
+            <li><a href="mailto:cineflix@gmail.com" class="contactt">cineflix@gmail.com</a></li>
+            <li><a href="tel:+33623568955" class="contactt">+33 6 23 56 89 55</a></li>
+          </ul>
+        </div>
+  
+        <!-- Section rsx -->
+        <div class="col-md-4 mb-3" style="color: #ffffff; text-align: center;">
+          <h5 style="color: #ffffff; font-size: 1.7rem;  font-family: Raleway, serif;">Réseaux-sociaux</h5>
+          <ul class="list-unstyled d-flex gap-3 " style="text-align: center; justify-content: center;">
+            <li style="text-align: center;">
+              <a href="https://www.facebook.com/groups/448485336360350" target="_blank" style="text-align: center;">
+                <i class="bi bi-facebook rsxx"></i> 
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/cineflixcinemas/" target="_blank" style="text-align: center;">
+                <i class="bi bi-instagram rsxx"></i> 
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/cineflixz" target="_blank" style="text-align: center;">
+                <i class="bi bi-twitter-x rsxx"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Section mentions -->
+        <div class="col-md-4">
+          <h5 style="color: #ffffff; font-size: 1.7rem;  font-family: Raleway, serif;">Informations</h5>
+          <ul class="list-unstyled">
+            <li><a href="mentionslegales.html" class="  infoo" target="_blank">Mentions légales</a></li>
+            <li><a href="politiquedeco.html" class=" infoo" target="_blank">Politique de confidentialité</a></li>
+            <li><a href="a-propos.html" class="  infoo" target="_blank">À propos</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Ligne de séparation -->
+      <hr class="bg-secondary my-3" style="color: #db2929;">
+  
+      <!-- Copyright -->
+      <div class="text-center">
+        <small>© 2024 CinéFlix. Tous droits réservés.</small>
+      </div>
+    </div>
+  </footer>
+  
+    <!---------------------------------------------------------------- SCRIPT --------------------------------------------------------------------------------------->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!---------------------------------------------------------------- SCRIPT --------------------------------------------------------------------------------------->
+  </body>
+</html>
