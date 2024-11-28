@@ -1,0 +1,520 @@
+body {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+}
+
+/******************************************************* NAVBAR *****************************************************/
+
+.navbar-custom {
+  background-color: rgba(23, 23, 23, 0.786) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%; /* Prend toute la largeur */
+  z-index: 1000; /* S'assure que la navbar est au-dessus du contenu */
+}
+
+.nav-link {
+  font-family: "Raleway", serif;
+}
+
+.nav-link:hover {
+  font-weight: 700;
+}
+
+.actioncolor:hover {
+  background-color: rgb(124, 17, 17);
+}
+
+.horrorcolor:hover {
+  background-color: rgb(255, 165, 0);
+}
+
+.comediecolor:hover {
+  background-color: yellow;
+  color: black !important;
+}
+
+.scificolor:hover {
+  background-color: #02ec8e;
+  color: black !important;
+}
+
+.dramacolor:hover {
+  background-color: rgb(70, 159, 14);
+}
+
+.romancecolor:hover {
+  background-color: rgb(39, 76, 200);
+}
+
+/***************************** BOUTON CONNEXION *******************/
+.btncnx {
+  font-family: "Raleway", serif;
+  background-color: white;
+  border-width: 5px;
+  border-color: rgba(151, 5, 5, 0.893);
+  color: rgb(151, 5, 5);
+  font-weight: 700;
+}
+
+.btncnx:hover {
+  background-color: rgb(102, 16, 33);
+  border-color: rgb(102, 16, 33);
+}
+
+/***************************** FIN BOUTON CONNEXION *******************/
+@media (max-width: 992px) {
+  .trait {
+    display: none;
+  }
+  .btncnx {
+    width: 100%;
+  }
+}
+
+/******************************************************* FIN-NAVBAR *****************************************************/
+.parallax {
+  background-image: url("../img/deadpoolact.jpg");
+  min-height: 850px;
+  margin-top: 0px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: 850px;
+  background-color: rgba(0, 0, 0, 0.432); /* Couche noire transparente */
+  z-index: 1;
+}
+
+.text-container {
+  z-index: 20;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.hero-title {
+  border: #02ec8e !important;
+  font-size: 5rem;
+  font-family: "Raleway", serif;
+}
+
+.hero-description {
+  font-size: 1.3rem;
+  font-family: "Raleway", serif;
+}
+
+.btnabbonner {
+  font-size: 1.3rem;
+  padding: 10px;
+  font-family: "Raleway", serif;
+  background-color: white;
+  border-width: 5px;
+  border-color: rgba(151, 5, 5, 0.893);
+  color: rgb(151, 5, 5);
+  font-weight: 700;
+}
+
+.btnabbonner:hover {
+  background-color: rgb(102, 16, 33);
+  border-color: rgb(102, 16, 33);
+}
+
+.ticket {
+  padding-right: 5px;
+}
+
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+  }
+
+  .btnabbonner {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .btnabbonner {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .btnabbonner {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+}
+
+/******************************************************  FOG ************************************************************************************/
+
+.foggy-background {
+  width: 100%;
+  height: 170vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 40%;
+  animation-name: foggy;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+@keyframes foggy {
+  0% {
+    translate: 0px 0 0px;
+  }
+  50% {
+    translate: -5px 0 0px;
+  }
+  100% {
+    translate: 0px 0 0px;
+  }
+}
+
+/****************************************************** FIN FOG ************************************************************************************/
+.parallaxv {
+  background-image: url("../img/vendettascreen.jpg");
+  min-height: 300px;
+  margin-top: 0px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/****************************************************** SECTION AVANTAGES ************************************************************************************/
+
+/* Section générale */
+.sectionav {
+  padding: 80px 0px;
+  background: linear-gradient(120deg, #1a1a1a, #2b2b2b);
+  color: white;
+}
+
+.title-av {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #e63946;
+  font-family: "Raleway", serif;
+}
+
+.titlecrd {
+  font-size: 1.7rem;
+  color: #e63946;
+  font-weight: 800;
+}
+
+.card-textt {
+  font-size: 1rem;
+  color: #000000 !important;
+  font-weight: 400;
+}
+.descr-av {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #ddd;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.avantage-icon {
+  font-size: 3rem;
+  color: #e63946;
+  margin-bottom: 15px;
+}
+
+.gras {
+  color: #e63946;
+}
+
+@media (min-width: 995px) and (max-width: 1400px) {
+  .titlecrd {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 995px) {
+  .titlecrd {
+    font-size: 13px;
+  }
+}
+/****************************************************** FIN SECTION AVANTAGES ************************************************************************************/
+/******************************************************  SECTION FILMS POPULAIRES ************************************************************************************/
+
+.card-title {
+  font-size: 1.7rem;
+  color: #e63946;
+  font-weight: 800;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.filmpop {
+  background-color: #121212;
+  color: white;
+}
+
+.filmpop .card {
+  background-color: #1e1e1e;
+  border: none;
+}
+
+.filmpop .card-img-top {
+  height: 500px;
+  object-fit: cover;
+}
+
+.filmpop .btn-outline-danger {
+  border-color: #e63946;
+  color: #e63946;
+}
+
+.filmpop .btn-outline-danger:hover {
+  background-color: #e63946;
+  color: white;
+}
+
+.filmpop .btn-danger {
+  background-color: #e63946;
+  border: none;
+}
+
+.filmpop h2 {
+  color: #e63946;
+}
+
+/*************************************************************** SECTION ABBONEMENT ******************************************************/
+
+/* Icônes */
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Boutons */
+.btn-outline-danger {
+  border-color: #c21c1c;
+  color: #c21c1c;
+}
+
+.btn-outline-danger:hover {
+  background-color: #c21c1c;
+  color: #fff;
+}
+
+/* Cartes */
+.card {
+  border: 1px solid #c21c1c;
+}
+
+.card-header,
+.card-footer {
+  background-color: transparent;
+  color: #c21c1c;
+}
+
+.card-body {
+  color: #c21c1c;
+}
+
+/*************************************************************** FIN SECTION ABBONEMENT ******************************************************/
+/*************************************************************** SECTION AVIS ******************************************************/
+
+.carousel-inner .card {
+  border: 1px solid #c21c1c;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #c21c1c;
+  border-radius: 50%;
+}
+
+/*************************************************************** FIN SECTION AVIS ******************************************************/
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 500px; /* Ajustez selon vos besoins */
+  overflow: hidden;
+}
+
+.filmss {
+  margin-top: -600px;
+}
+
+.sectionadr {
+  margin-bottom: -100px;
+}
+@media (max-width: 1500px) {
+  .filmss {
+    margin-top: -900px;
+  }
+  .sectionadr {
+    margin-bottom: -400px;
+  }
+}
+@media (max-width: 768px) {
+  .video-container {
+    display: none;
+  }
+  .filmss {
+    margin-top: -60px;
+  }
+  .sectionadr {
+    margin-bottom: 0px;
+  }
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Permet à la vidéo de remplir le conteneur */
+}
+
+.video-container .video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.651); /* 50% opacité noire */
+  z-index: 1;
+}
+
+.video-container .video-text {
+  position: absolute;
+  top: 20%; /* Positionnez le texte à 20% de la hauteur de la vidéo */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  text-align: center;
+}
+
+/*************************************************************************** TUILES **************************************************************/
+
+.tile {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.614); /* Filtre noir avec opacité à 50% */
+  z-index: 1;
+}
+
+.tile h3 {
+  position: relative;
+  z-index: 2; /* Le texte est au-dessus du filtre */
+}
+
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/************************************************************** FOOTERRRR ********************************************************************/
+
+.rsxx {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.rsxx:hover {
+  color: #d20b0b;
+  font-size: 2rem;
+}
+
+.infoo {
+  color: #fff;
+  text-decoration: none;
+}
+
+.infoo:hover {
+  color: #fff;
+  text-decoration: underline #d20b0b 3px;
+}
+
+.contactt {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contactt:hover {
+  color: #fff;
+  text-decoration: underline #d20b0b 3px;
+}
+
+/************************************************************** FINFOOTERRRR ********************************************************************/
