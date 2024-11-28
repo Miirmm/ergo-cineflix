@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <title>Cinéflix - Horreur</title>
   <link href="../img/logo.png" rel="icon" type="image/png"/>
+  <!-- stylesheet -->
+  <link
+          rel="stylesheet"
+          href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
+  />
+  
+  <!-- script -->
+  <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
   <meta
           content="CinéFlix - Découvrez les meilleurs films d'horreur et bien plus encore. Abonnez-vous pour une expérience cinématographique inoubliable."
           name="description"
@@ -55,57 +63,59 @@
 <body>
 <section class="hero-banner">
   <section class="hero-container">
-  <!--    bandeau nav-->
-  <nav class="bg-black bg-opacity-45 p-4 mb-20">
-    <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center">
-      <div class="text-white flex justify-space-between font-bold text-3xl mb-4 lg:mb-0 "><img class="img-logo"
-                                                                                               src="../img/logo.png">
-        <span class=" h-8 mt-3 hover:text-orange-600 hover:cursor-pointer align-sub">Cinéflix Horreur</span>
+    <!--    bandeau nav-->
+    <nav class="bg-black bg-opacity-45 p-4 mb-20">
+      <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center">
+        <div class="text-white flex justify-space-between font-bold text-3xl mb-4 lg:mb-0 "><img class="img-logo"
+                                                                                                 src="../img/logo.png">
+          <span class=" h-8 mt-3 hover:text-orange-600 hover:cursor-pointer align-sub"><a href="../index.html">Cinéflix Horreur</a></span>
+        </div>
+        
+        <div class="lg:hidden">
+          <button class="text-white focus:outline-none">
+            <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                      d="M4 6h16M4 12h16m-7 6h7"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        
+        <div class="lg:flex flex-col lg:flex-row lg:space-x-4 lg:mt-0 mt-4 flex flex-col items-center text-xl">
+          <a class="text-white  px-4 py-2  hover:text-pink-600" href="../index.html">Accueil</a>
+          <a class="text-white  px-4 py-2 hover:text-red-700 " href="/">Action</a>
+          <a class="text-white  px-4 py-2  hover:text-lime-400" href="#Projects">Science Fiction</a>
+          <a class="text-white  px-4 py-2  hover:text-blue-600" href="/">Romance</a>
+          <a class="text-white  px-4 py-2  hover:text-green-600" href="/">Drama</a>
+          <a class="text-white  px-4 py-2  hover:text-yellow-300" href="/">Comédie</a>
+        </div>
       </div>
-      
-      <div class="lg:hidden">
-        <button class="text-white focus:outline-none">
-          <svg
-                  class="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-                    d="M4 6h16M4 12h16m-7 6h7"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-            ></path>
-          </svg>
-        </button>
-      </div>
-      
-      <div class="lg:flex flex-col lg:flex-row lg:space-x-4 lg:mt-0 mt-4 flex flex-col items-center text-xl">
-        <a class="text-white  px-4 py-2 hover:text-red-700 " href="/">Action</a>
-        <a class="text-white  px-4 py-2  hover:text-lime-400" href="#Projects">Science Fiction</a>
-        <a class="text-white  px-4 py-2  hover:text-blue-600" href="/">Romance</a>
-        <a class="text-white  px-4 py-2  hover:text-green-600" href="/">Drama</a>
-        <a class="text-white  px-4 py-2  hover:text-yellow-300" href="/">Comédie</a>
-      </div>
-    </div>
-  
-  </nav>
-  <!--    fin nav-->
-  <!--    debut paragraph intro-->
-  <h1 class="text-7xl font-bold text-white ml-14 p-4">
-    Horreur
-  </h1>
-  <p class="w-7/12 text-xl text-white p-4 ml-14">"Plongez dans un univers de frissons et d'angoisse avec notre
-    sélection 100%
-    horreur. Des classiques du cinéma aux nouveautés terrifiantes, explorez des récits glaçants, des créatures
-    cauchemardesques et des histoires à vous couper le souffle. Oserez-vous appuyer sur play ?"</p>
-  <div class="m-2 transform transition duration-500 hover:scale-110 w-4/6 mt-10 space-around "><a
-          class="bouton-abonnez text-lg text-white p-2 ml-44 mt-2" href="#">Je m'abonne</a></div>
+    
+    </nav>
+    <!--    fin nav-->
+    <!--    debut paragraph intro-->
+    <h1 class="text-7xl font-bold text-white ml-14 p-4">
+      Horreur
+    </h1>
+    <p class="w-7/12 text-xl text-white p-4 ml-14">"Plongez dans un univers de frissons et d'angoisse avec notre
+      sélection 100%
+      horreur. Des classiques du cinéma aux nouveautés terrifiantes, explorez des récits glaçants, des créatures
+      cauchemardesques et des histoires à vous couper le souffle. Oserez-vous appuyer sur play ?"</p>
+    <div class="m-2 transform transition duration-500 hover:scale-110 w-4/6 mt-10 space-around "><a
+            class="bouton-abonnez text-lg text-white p-2 ml-44 mt-2" href="#">Je m'abonne</a></div>
   </section>
   <!--    fin paragraphe intro-->
   <!--    Début carrousel-->
+
   <h2 class="text-5xl font-bold text-white text-center text- mb-1 mt-10 p-4"> Nos films à la une</h2>
   <div class="relative w-4/5 h-2/4 center-slider mt-2">
     <div class="swiper multiple-slide-carousel swiper-container relative">
@@ -114,27 +124,38 @@
           <img class="img-slider" src="../img/affiche-alien%20(Petite).jpg">
           <h3 class="text-xl font-bold text-white text-center">Alien</h3>
           <div class="m-2 transform text-center transition duration-500 hover:scale-110 w-9/10 space-around ">
-            <a class="bouton-abonnez text-xxl text-white p-2 text-center mt-2" href="#">Je m'abonne</a>
+            <!-- Modal toggle -->
+            <button data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white bg-orange-600 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800" type="button-1">
+              Voir la bande annonce
+            </button>
           </div>
+          
         
         </div>
         <div class="swiper-slide w-full p-4 flex flex-col items-center justify-center">
           <img class="img-slider" src="../img/affiche-martyrs%20(Petite).png">
           <h3 class="text-xl font-bold text-white text-center">Martyrs</h3>
           <div class="m-2 transform text-center transition duration-500 hover:scale-110 w-9/10 space-around ">
-            <a class="bouton-abonnez text-white p-2 text-center mt-2" href="#">Je m'abonne</a></div>
+            <button data-modal-target="default-modal1" data-modal-toggle="default-modal1" class="block text-white bg-orange-600 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800" type="button">
+              Voir la bande annonce
+            </button></div>
         </div>
         <div class="swiper-slide w-full p-4 flex flex-col items-center justify-center">
           <img class="img-slider" src="../img/affiche-scream%20(Petite).jpg">
           <h3 class="text-xl font-bold text-white text-center">Scream</h3>
           <div class="m-2 transform text-center transition duration-500 hover:scale-110 w-9/10 space-around ">
-            <a class="bouton-abonnez text-white p-2 text-center mt-2" href="#">Je m'abonne</a></div>
+            <!-- Modal toggle -->
+            <button data-modal-target="default-modal2" data-modal-toggle="default-modal2" class="block text-white bg-orange-600 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800" type="button-2">
+              Voir la bande annonce
+            </button></div>
         </div>
         <div class="swiper-slide w-full p-4 flex flex-col items-center justify-center">
           <img class="img-slider" src="../img/affiche-the%20substance%20(Petite).jpg">
           <h3 class="text-xl font-bold text-white text-center">Substance</h3>
           <div class=" m-2 transform text-center transition duration-500 hover:scale-110 w-9/10 space-around ">
-            <a class="bouton-abonnez text-white p-2 text-center mt-2" href="#">Je m'abonne</a></div>
+            <button data-modal-target="default-modal4" data-modal-toggle="default-modal4" class="block text-white bg-orange-600 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800" type="button-4">
+              Voir la bande annonce
+            </button></div>
         </div>
       </div>
       <div class="absolute flex justify-center items-center m-auto left-0 right-0 w-fit bottom-12">
@@ -159,10 +180,115 @@
       </div>
     </div>
   </div>
+  <!--                                      popup alien-->
+  <!-- Main modal -->
+  <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            BA Alien
+          </h3>
+          <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <div class="p-0 md:p-5 space-y-4">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/qFCMm6gJQe8?si=GZo_K-R4Sap6_wMl&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--                              fin popup alien-->
+  <!--                                      popup martyrs-->
+  <!-- Main modal -->
+  <div id="default-modal1" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            BA Alien
+          </h3>
+          <button type="button1" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal1">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <div class="p-0 md:p-5 space-y-4">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/k0l0gpeKbAc?si=3HLXH04tTTR8sfq0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--                              fin popup martyrs-->
+  <!--                                      popup scream-->
+  <!-- Main modal -->
+  <div id="default-modal2" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            BA Scream
+          </h3>
+          <button type="button-2" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal2">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <div class="p-0 md:p-5 space-y-4">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/d7yWagIcCLE?si=alxBkEiYP3fSokGH&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--                              fin popup alien-->
+  <!--                                      popup substance-->
+  <!-- Main modal -->
+  <div id="default-modal4" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            BA The substance
+          </h3>
+          <button type="button-4" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal4">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <div class="p-0 md:p-5 space-y-4">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/LNlrGhBpYjc?si=T1QaFJ8obnuauwzz&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--                              fin popup substance-->
+  
   <!--    fin carrousel-->
 </section>
 
-<section class=" mb-1 section-avantage">
+<section class=" mb-0 section-avantage mb-0">
   <div class="div-bande-section"></div>
   <!--    intro avantage-->
   <h2 class="text-4xl font-bold text-white text-center ">Découvrez nos
@@ -477,7 +603,7 @@
   <!--    section autres categories-->
   <section class="section-autres-categories">
     <h2 class="text-5xl font-bold text-white text-center text- mb-3 mt-20 p-4">Nos Autres Catégories</h2>
-      <div class="antialiased  flex flex-col font-sans from-black items-stretch justify-center h-screen p-2  sm:flex-column sm:items-center">
+    <div class="antialiased  flex flex-col font-sans from-black items-stretch justify-center h-screen p-2  sm:flex-column sm:items-center">
       <div class="flex flex-col flex-grow items-stretch max-w-3xl min-w-md w-full sm:flex-col  sm:h-72 sm:overflow-hidden">
         <div class="active cursor-pointer duration-700 ease-in-out flex-grow m-2 min-h-14 min-w-14 overflow-hidden pane relative rounded-3xl transition-all">
           <div class=" bg-action absolute background bg-center bg-cover  bg-no-repeat duration-700 ease-in-out inset-0 scale-105 transition-all z-10"></div>
@@ -486,11 +612,13 @@
             <div class="content flex flex-col justify-center leading-tight text-white whitespace-pre">
               <div class="delay-100 text-xl duration-700 ease-in-out opacity-0 relative transform transition-all translate-x-8">
                 Action
-                <a href="action.html" class="flex items-center White border border-red-600 border-2  pr-4 gap-2 rounded inline-flex items-center">
+                <a href="action.html"
+                   class="flex items-center White border border-red-600 border-2  pr-4 gap-2 rounded inline-flex items-center">
     <span>
         Voir plus
     </span>
-                  <svg class="w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  <svg class="w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                       stroke-width="2"
                        viewBox="0 0 24 24" class="w-6 h-6 ml-2">
                     <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                   </svg>
@@ -506,11 +634,13 @@
             <div class="content flex flex-col justify-center leading-tight text-white whitespace-pre">
               <div class="delay-100 text-xl duration-700 ease-in-out opacity-0 relative transform transition-all translate-x-8">
                 Drama
-                <a href="drama_index.html" class="flex items-center White border border-green-600 border-2  pr-4 gap-2 rounded inline-flex items-center">
+                <a href="drama_index.html"
+                   class="flex items-center White border border-green-600 border-2  pr-4 gap-2 rounded inline-flex items-center">
     <span>
         Voir plus
     </span>
-                  <svg class="w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  <svg class="w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                       stroke-width="2"
                        viewBox="0 0 24 24" class="w-6 h-6 ml-2">
                     <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                   </svg>
@@ -526,11 +656,13 @@
             <div class="content flex flex-col justify-center leading-tight text-white whitespace-pre">
               <div class="ease-in-out text-xl font-bold duration-700 opacity-0 relative transform transition-all translate-x-8">
                 Science-Fiction
-                <a href="science_fiction.html" class="flex items-center White border border-lime-600 border-2  pr-4 gap-2 rounded inline-flex items-center">
+                <a href="science_fiction.html"
+                   class="flex items-center White border border-lime-600 border-2  pr-4 gap-2 rounded inline-flex items-center">
     <span>
         Voir plus
     </span>
-                  <svg class="w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  <svg class="w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                       stroke-width="2"
                        viewBox="0 0 24 24" class="w-6 h-6 ml-2">
                     <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                   </svg>
@@ -546,11 +678,13 @@
             <div class="content flex flex-col justify-center leading-tight text-white whitespace-pre">
               <div class="ease-in-out text-xl font-bold duration-700 opacity-0 relative transform transition-all translate-x-8">
                 Romance
-                <a href="romance.html" class="flex items-center White border border-blue-600 border-2  pr-4 gap-2 rounded inline-flex items-center">
+                <a href="romance.html"
+                   class="flex items-center White border border-blue-600 border-2  pr-4 gap-2 rounded inline-flex items-center">
     <span>
         Voir plus
     </span>
-                  <svg class="w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  <svg class="w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                       stroke-width="2"
                        viewBox="0 0 24 24" class="w-6 h-6 ml-2">
                     <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                   </svg>
@@ -566,11 +700,13 @@
             <div class="content flex flex-col justify-center leading-tight text-white whitespace-pre">
               <div class="ease-in-out text-xl font-bold duration-700 opacity-0 relative transform transition-all translate-x-8">
                 Comédie
-                <a href="" class="flex items-center White border border-yellow-600 border-2  pr-4 gap-2 rounded inline-flex items-center">
+                <a href=""
+                   class="flex items-center White border border-yellow-600 border-2  pr-4 gap-2 rounded inline-flex items-center">
     <span>
         Voir plus
     </span>
-                  <svg class="w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  <svg class="w-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                       stroke-width="2"
                        viewBox="0 0 24 24" class="w-6 h-6 ml-2">
                     <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                   </svg>
@@ -583,7 +719,133 @@
     </div>
   </section>
   <!--    fin section autres Categories-->
+  <!--  section bonus-->
 </section>
+<section class="section-bonus">
+  <h2 class="text-5xl font-bold text-white text-center text- mb-0  p-4">Courts-métrages</h2>
+  <p class="text-white w-2/4 text-center m-auto text-lg">Bienvenue dans la section la plus sombre et envoûtante de notre
+    plateforme. Ici, les ombres dansent, les secrets
+    chuchotent, et chaque titre vous promet des frissons mémorables. Explorez des histoires captivantes, effrayantes et
+    mystérieuses, soigneusement sélectionnées pour les amateurs de sensations fortes. Préparez-vous à affronter vos
+    peurs, car une fois entré… il n’y a pas de retour en arrière. </p>
+  <!--  carte 1-->
+  
+  <div class="div-carte-cm">
+    <div class=" div-carte-unit max-w-sm bg-gray-900 border border-orange-600 rounded-lg shadow dark:bg-gray-900 dark:border-orange-600">
+      <a href="https://www.senscritique.com/film/mama/8378032" target="_blank">
+        <img class="rounded-t-lg w-full" src="https://media.senscritique.com/media/000004396480/300/mama.jpg"
+             alt=""/>
+      </a>
+      <div class="p-5">
+        <a href="https://www.senscritique.com/film/mama/8378032" target="_blank">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Mamá</h5>
+        </a>
+        <p class="mb-3 font-normal text-white dark:text-white">EVictoria réveille sa soeur et insiste pour partir au
+          plus vite de la maison, parce que Mamá est revenue.</p>
+        <a href="https://www.senscritique.com/film/mama/8378032" target="_blank"
+           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-white dark:bg-orange-600 dark:hover:bg-orange-800 dark:focus:ring-white">
+          Voir plus
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <!--  fin carte 1-->
+    <!--  carte 2-->
+    
+    
+    <div class=" div-carte-unit max-w-sm bg-gray-900 border border-orange-600 rounded-lg shadow dark:bg-gray-900 dark:border-orange-600">
+      <a href="https://www.senscritique.com/film/suckablood/8109965" target="_blank">
+        <img class="rounded-t-lg w-full" src="https://media.senscritique.com/media/000004202609/300/suckablood.jpg"
+             alt=""/>
+      </a>
+      <div class="p-5">
+        <a href=https://www.senscritique.com/film/suckablood/8109965" target="_blank">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Suckablood</h5>
+        </a>
+        <p class="mb-3 font-normal text-white dark:text-white">En pleine nuit, une jeune baby-sitter de la banlieue de
+          Londres est dérangée par les cris de la petite fille qu'elle garde. À plusieurs reprises, elle retrouve la
+          fillette debout sur son lit, en pleurs, le visage livide.</p>
+        <a href="https://www.senscritique.com/film/suckablood/8109965" target="_blank"
+           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-white dark:bg-orange-600 dark:hover:bg-orange-800 dark:focus:ring-white">
+          Voir plus
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <!--  fin carte 2 -->
+  <!--  carte 3-->
+  
+  <div class="div-carte-cm div-carte-cm-btm">
+    <div class=" div-carte-unit max-w-sm bg-gray-900 border border-orange-600 rounded-lg shadow dark:bg-gray-900 dark:border-orange-600">
+      <a href="https://www.senscritique.com/film/game/8468507" target="_blank">
+        <img class="rounded-t-lg w-full" src="https://media.senscritique.com/media/000007546546/300/game.jpg"
+             alt=""/>
+      </a>
+      <div class="p-5">
+        <a href="https://www.senscritique.com/film/game/8468507" target="_blank">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Game</h5>
+        </a>
+        <p class="mb-3 font-normal text-white dark:text-white">Une femme est poursuivie par trois sinistres individus.
+          S'en sortira-t-elle ? (programme Mauvais Genre</p>
+        <a href="https://www.senscritique.com/film/game/8468507" target="_blank"
+           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-white dark:bg-orange-600 dark:hover:bg-orange-800 dark:focus:ring-white">
+          Voir plus
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <!--  fin carte 3-->
+    <!--  carte 4 -->
+    
+    
+    <div class=" div-carte-unit max-w-sm bg-gray-900 border border-orange-600 rounded-lg shadow dark:bg-gray-900 dark:border-orange-600">
+      <a href="https://www.senscritique.com/film/red_balloon/371315" target="_blank">
+        <img class="rounded-t-lg w-full" src="https://media.senscritique.com/media/000000051113/300/red_balloon.jpg"
+             alt=""/>
+      </a>
+      <div class="p-5">
+        <a href="https://www.senscritique.com/film/red_balloon/371315" target="_blank">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Red Balloon</h5>
+        </a>
+        <p class="mb-3 font-normal text-white dark:text-white">En pleine nuit, une jeune baby-sitter de la banlieue de
+          Londres est dérangée par les cris de la petite fille qu'elle garde. À plusieurs reprises, elle retrouve la
+          fillette debout sur son lit, en pleurs, le visage livide.</p>
+        <a href="https://www.senscritique.com/film/red_balloon/371315" target="_blank"
+           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-white dark:bg-orange-600 dark:hover:bg-orange-800 dark:focus:ring-white">
+          Voir plus
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <!--  fin carte 4-->
+</section>
+<!--fin section bonus-->
 <!--footer-->
 
 
@@ -595,7 +857,7 @@
           <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
           <ul class="text-gray-500 dark:text-gray-400 font-medium">
             <li class="mb-4">
-              <a href="https://flowbite.com/" class="hover:underline">Contact</a>
+              <a href="../contact.html" target="_blank" class="hover:underline">Contact</a>
             </li>
             <li>
               <a href="https://tailwindcss.com/" class="hover:underline">A propos</a>
@@ -629,38 +891,52 @@
         </div>
       </div>
     </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"/>
     <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/"
+                                                                                          class="hover:underline">Flowbite™</a>. All Rights Reserved.
           </span>
       <div class="flex mt-4 sm:justify-center sm:mt-0">
         <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
-            <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+               viewBox="0 0 8 19">
+            <path fill-rule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  clip-rule="evenodd"/>
           </svg>
           <span class="sr-only">Facebook page</span>
         </a>
         <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+               viewBox="0 0 21 16">
             <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
           </svg>
           <span class="sr-only">Discord community</span>
         </a>
         <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
-            <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+               viewBox="0 0 20 17">
+            <path fill-rule="evenodd"
+                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                  clip-rule="evenodd"/>
           </svg>
           <span class="sr-only">Twitter page</span>
         </a>
         <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+               viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  clip-rule="evenodd"/>
           </svg>
           <span class="sr-only">GitHub account</span>
         </a>
         <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+               viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+                  d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                  clip-rule="evenodd"/>
           </svg>
           <span class="sr-only">Dribbble account</span>
         </a>

@@ -165,3 +165,37 @@ body {
     text-align: center;
     color: white;
 }
+.section-bonus{
+    background-image: url("https://cdn.pixabay.com/photo/2022/04/26/11/29/smoke-7158160_1280.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+}
+.div-carte-cm{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4rem;
+}
+.div-carte-cm-btm{
+    padding-bottom: 4rem;
+}
+.video{
+    margin: auto;
+}
+@media screen and (max-width: 768px) {
+    .div-carte-cm{
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 0;
+    }
+    .div-carte-cm-btm{
+        margin-bottom: 0;
+        padding: 0;
+        padding-bottom: 4rem;
+    }
+    .div-carte-unit{
+        margin-top: 1rem;
+    }
+}
