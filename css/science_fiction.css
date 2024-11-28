@@ -1,0 +1,774 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', 'italic';
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+    justify-content: center;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    cursor: url('../img/arrow-pointer-sf.png'), auto;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 4.5rem;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/** NAVBAR **/
+
+.navbar-custom {
+    background-color: rgba(23, 23, 23, 0.786) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* Prend toute la largeur */
+    z-index: 1000;
+    /* S'assure que la navbar est au-dessus du contenu */
+}
+
+.nav-link {
+    font-family: "Raleway", serif;
+}
+
+.nav-link:hover {
+    font-weight: 700;
+}
+
+.actioncolor:hover {
+    background-color: rgb(124, 17, 17);
+}
+
+.horrorcolor:hover {
+    background-color: rgb(255, 165, 0);
+}
+
+.comediecolor:hover {
+    background-color: yellow;
+    color: black !important;
+}
+
+.scificolor:hover {
+    background-color: #54F98D;
+    color: black !important;
+}
+
+.dramacolor:hover {
+    background-color: rgb(70, 159, 14);
+}
+
+.romancecolor:hover {
+    background-color: rgb(39, 76, 200);
+}
+
+/** BOUTON CONNEXION **/
+.btncnx {
+    font-family: "Raleway", serif;
+    background-color: #54F98D;
+    color: #000;
+    border-width: 5px;
+    border-color: #54F98D;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #54F98D;
+}
+
+.btncnx:hover {
+    color: #fff;
+    background-color: #0abe49;
+    border-color: #0abe49;
+    box-shadow: 0 0 20px #54F98D, 0 0 30px #54F98D, 0 0 50px #54F98D;
+
+}
+
+/** FIN BOUTON CONNEXION ***/
+@media (max-width: 992px) {
+    .trait {
+        display: none;
+    }
+
+    .btncnx {
+        width: 100%;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo {
+    color: #54F98D;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar .nav-links li {
+    margin-left: 30px;
+}
+
+.navbar .nav-links a {
+    color: #54F98D;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #54F98D, 0 0 10px #54F98D, 0 0 15px #54F98D;
+}
+
+/************************************************* Hero section ************************************************************************************/
+
+.hero_background_img {
+    background-repeat: no-repeat;
+    height: 5rem;
+    position: fixed;
+}
+
+.hero_section {
+    background-color: #000;
+    background-image: url(../img/fond_sf.jpg);
+    height: 35rem;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+}
+
+h1 {
+    font-size: 3rem;
+    color: #54F98D;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    /* Simuler un contour avec plusieurs ombres */
+    font-family: 'Mulish', 'sans-serif';
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-family: 'Mulish', 'sans-serif';
+    color: #54F98D;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    /* Simuler un contour avec plusieurs ombres */
+}
+
+.cta-button {
+    background-color: #54F98D;
+    color: #000;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: 'Mulish';
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #54F98D;
+}
+
+.cta-button:hover {
+    color: #fff;
+    background-color: #0abe49;
+    box-shadow: 0 0 20px #54F98D, 0 0 30px #54F98D, 0 0 50px #54F98D;
+}
+
+/* cta-avantage */
+
+.container-text-center {
+    justify-content: center;
+}
+
+.cta-avantage {
+    background-color: black;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta-avantage h2 {
+    font-size: 4.5rem;
+    font-family: 'Mulish', 'sans-serif';
+    color: #54F98D;
+    margin-top: 5.8rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 4.5rem;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.film-card {
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+
+.film-image {
+    max-width: 100%;
+    border-radius: 5px;
+    height: 7rem;
+    background-color: white;
+}
+
+.film-info {
+    padding: 10%;
+}
+
+.film-info h5 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #54F98D;
+}
+
+.film-info p {
+    margin-bottom: 5px;
+    font-size: 0.7rem;
+}
+
+h3 {
+    color: #54F98D;
+}
+
+.contact-section button {
+    background-color: #54F98D;
+    color: #000;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #54F98D;
+}
+
+.contact-section button:hover {
+    background-color: #0abe49;
+    box-shadow: 0 0 20px #54F98D, 0 0 30px #54F98D, 0 0 50px #54F98D;
+}
+
+/* Section Films en vedette */
+
+.films_en_vedette h2 {
+    font-size: 4.5rem;
+    font-family: 'Mulish', 'sans-serif';
+    color: #54F98D;
+    margin-top: 5.8rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.container_film_caroussel {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.films_en_vedette {
+    align-items: center;
+}
+
+.button_caroussel {
+    background-color: #54F98D;
+    color: #000;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: 'Mulish';
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #54F98D;
+}
+
+.button_caroussel :hover {
+    color: #fff;
+    background-color: rgb(10, 190, 73);
+    box-shadow: 0 0 20px rgb(84, 249, 141), 0 0 30px #54F98D, 0 0 50px #54F98D;
+}
+
+/* offres_d'abonnement */
+
+.offres_abonnement h2 {
+    font-size: 4.5rem;
+    font-family: 'Mulish', 'sans-serif';
+    color: #54F98D;
+    margin-top: 5.8rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+
+.offres_abonnement {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.p_offres {
+    margin-bottom: 1rem;
+}
+
+.h3_red {
+    color: red;
+}
+
+.h3_orange {
+    color: orange;
+}
+
+.h3_yellow {
+    color: yellow;
+}
+
+.h3_green {
+    color: green;
+}
+
+/*Avis Client*/
+
+.avis_client h2 {
+    font-size: 4.5rem;
+    font-family: 'Mulish', 'sans-serif';
+    color: #54F98D;
+    margin-top: 5.8rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.client_1 {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.client_2 {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.client_3 {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.client_4 {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.avis_client_p {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+}
+
+.col-12,
+.col-md-6,
+.col-lg-3 {
+    margin-bottom: 2rem;
+}
+
+/* Autres catégorie */
+
+.Tuiles_de_categories h2 {
+    font-size: 4.5rem;
+    font-family: 'Mulish', 'sans-serif';
+    color: #54F98D;
+    margin-top: 5.8rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.action_h3 {
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: rgb(124, 17, 17);
+    text-shadow: 0 0 20px rgb(124, 17, 17), 0 0 30px rgb(124, 17, 17), 0 0 50px rgb(124, 17, 17);
+}
+
+.horreur_h3 {
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: rgb(255, 165, 0);
+    text-shadow: 0 0 20px rgb(255, 165, 0), 0 0 30px rgb(255, 165, 0), 0 0 50px rgb(255, 165, 0);
+}
+
+.romance_h3 {
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: rgb(39, 76, 200);
+    text-shadow: 0 0 20px rgb(39, 76, 200), 0 0 30px rgb(39, 76, 200), 0 0 50px rgb(39, 76, 200);
+}
+
+.drama_h3 {
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: rgb(70, 159, 14);
+    text-shadow: 0 0 20px rgb(70, 159, 14), 0 0 30px rgb(70, 159, 14), 0 0 50px rgb(70, 159, 14);
+}
+
+
+.cta-button-action {
+    background-color: rgb(124, 17, 17);
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: 'Mulish';
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgb(124, 17, 17);
+}
+
+.cta-button-action:hover {
+    color: #fff;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0 0 20px rgb(124, 17, 17), 0 0 30px rgb(124, 17, 17), 0 0 50px rgb(124, 17, 17);
+}
+
+.cta-button-horreur {
+    background-color: rgb(255, 165, 0);
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: 'Mulish';
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgb(255, 165, 0);
+}
+
+.cta-button-horreur:hover {
+    color: #fff;
+    background-color: rgb(251, 225, 0);
+    box-shadow: 0 0 20px rgb(255, 165, 0), 0 0 30px rgb(255, 165, 0), 0 0 50px rgb(255, 165, 0);
+}
+
+.cta-button-romance {
+    background-color: rgb(39, 76, 200);
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: 'Mulish';
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgb(39, 76, 200);
+}
+
+.cta-button-romance:hover {
+    color: #fff;
+    background-color: rgb(72, 157, 255);
+    box-shadow: 0 0 20px rgb(39, 76, 200), 0 0 30px rgb(39, 76, 200), 0 0 50px rgb(39, 76, 200);
+}
+
+.cta-button-drama {
+    background-color: rgb(70, 159, 14);
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: 'Mulish';
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgb(70, 159, 14);
+}
+
+.cta-button-drama:hover {
+    color: #fff;
+    background-color: rgb(112, 252, 25);
+    box-shadow: 0 0 20px rgb(70, 159, 14), 0 0 30px rgb(70, 159, 14), 0 0 50px rgb(70, 159, 14);
+}
+
+/* Bénéfices d'un abonnement */
+
+.benefice_d-un_abonnement h2 {
+    font-size: 4.5rem;
+    font-family: 'Mulish', 'sans-serif';
+    color: #54F98D;
+    margin-top: 5.8rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+
+.sci-fi-zone {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.sci-fi-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #54F98D;
+    text-transform: uppercase;
+}
+
+.sci-fi-description {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    color: #b5b5b5;
+}
+
+.sci-fi-films {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.sci-fi-card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sci-fi-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.sci-fi-image {
+    width: 100%;
+    height: 45rem;
+    object-fit: cover;
+}
+
+.sci-fi-info {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.sci-fi-film-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #54F98D;
+}
+
+.sci-fi-film-description {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.sci-fi-cta-button {
+    background-color: #54F98D;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.sci-fi-cta-button:hover {
+    background-color: #0abe49;
+    color: #fff;
+}
+
+.sci-fi-cta-container {
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .sci-fi-films {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sci-fi-card {
+        margin-bottom: 2rem;
+    }
+
+    .sci-fi-title {
+        font-size: 2.5rem;
+    }
+
+    .sci-fi-description {
+        font-size: 1.1rem;
+    }
+
+    .sci-fi-cta-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sci-fi-films {
+        grid-template-columns: 1fr;
+    }
+
+    .sci-fi-title {
+        font-size: 2rem;
+    }
+
+    .sci-fi-description {
+        font-size: 1rem;
+    }
+
+    .sci-fi-cta-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+
+/** FOOTERRRR **/
+
+.rsxx {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.rsxx:hover {
+    color: #54F98D;
+    font-size: 2rem;
+}
+
+.infoo {
+    color: #fff;
+    text-decoration: none;
+}
+
+.infoo:hover {
+    color: #fff;
+    text-decoration: underline #54F98D 3px;
+}
+
+.contactt {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contactt:hover {
+    color: #fff;
+    text-decoration: underline #54F98D 3px;
+}
+
+/** FIN FOOTERRRR **/
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+    }
+
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+    }
+
+    .contact-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+    }
+}
