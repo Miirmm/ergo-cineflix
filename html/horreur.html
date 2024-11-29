@@ -58,7 +58,10 @@
           crossorigin="anonymous"
           src="https://kit.fontawesome.com/cd8dd3426c.js"
   ></script>
-  
+<!--  aos-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--  fin aos-->
   <link href="../css/horreur.css" rel="stylesheet">
 </head>
 <body>
@@ -93,8 +96,8 @@
         
         <div class="lg:flex flex-col lg:flex-row lg:space-x-4 lg:mt-0 mt-4 flex flex-col items-center text-xl">
           <a class="text-white  px-4 py-2  hover:text-pink-600" href="../index.html">Accueil</a>
-          <a class="text-white  px-4 py-2 hover:text-red-700 " href="/">Action</a>
-          <a class="text-white  px-4 py-2  hover:text-lime-400" href="#Projects">Science Fiction</a>
+          <a class="text-white  px-4 py-2 hover:text-red-700 " href="action.html">Action</a>
+          <a class="text-white  px-4 py-2  hover:text-lime-400" href="science_fiction.html">Science Fiction</a>
           <a class="text-white  px-4 py-2  hover:text-blue-600" href="/">Romance</a>
           <a class="text-white  px-4 py-2  hover:text-green-600" href="/">Drama</a>
           <a class="text-white  px-4 py-2  hover:text-yellow-300" href="/">Comédie</a>
@@ -731,7 +734,7 @@
     peurs, car une fois entré… il n’y a pas de retour en arrière. </p>
   <!--  carte 1-->
   
-  <div class="div-carte-cm">
+  <div data-aos="fade-down-right" class="div-carte-cm">
     <div class=" div-carte-unit max-w-sm bg-gray-900 border border-orange-600 rounded-lg shadow dark:bg-gray-900 dark:border-orange-600">
       <a href="https://www.senscritique.com/film/mama/8378032" target="_blank">
         <img class="rounded-t-lg w-full" src="https://media.senscritique.com/media/000004396480/300/mama.jpg"
@@ -818,7 +821,8 @@
     <!--  carte 4 -->
     
     
-    <div class=" div-carte-unit max-w-sm bg-gray-900 border border-orange-600 rounded-lg shadow dark:bg-gray-900 dark:border-orange-600">
+    <div data-aos="fade-up"
+         data-aos-anchor-placement="center-center" class=" div-carte-unit max-w-sm bg-gray-900 border border-orange-600 rounded-lg shadow dark:bg-gray-900 dark:border-orange-600">
       <a href="https://www.senscritique.com/film/red_balloon/371315" target="_blank">
         <img class="rounded-t-lg w-full" src="https://media.senscritique.com/media/000000051113/300/red_balloon.jpg"
              alt="affiche de red ballon"/>
@@ -1015,5 +1019,8 @@ tailwind.config = {
         }
     }
 };</script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
