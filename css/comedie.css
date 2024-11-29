@@ -83,7 +83,7 @@ body {
     z-index: 1000;
 }
 .hero{
-    background-image: url(img/snowfallfranklin.jpg);
+    background-image: url(../img/snowfallfranklin.jpg);
     min-height: 100vh;
     background-size: cover;
     color: black;
