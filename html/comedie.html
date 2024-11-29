@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CinéFlix - Découvrez les meilleurs films d'action et bien plus encore. Abonnez-vous pour une expérience cinématographique inoubliable."
+    />
+    <!-- Balises Open Graph pour les réseaux sociaux -->
+    <meta
+      property="og:title"
+      content="CinéFlix - Plongez au cœur de la comedie"
+    />
+    <meta
+      property="og:description"
+      content="Regardez les meilleurs films de comedie sur CinéFlix. Abonnez-vous pour une expérience cinématographique inégalée !"
+    />
+    <meta property="og:image" content="hero-comedie.jpg" />
+    <!-- Chemin vers une image de partage -->
+    <meta property="og:url" content="https://www.cineflix.com/comedie" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CinéFlix" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="CinéFlix - Plongez au cœur de l'action"
+    />
+    <meta
+      name="twitter:description"
+      content="Découvrez une sélection explosive de films d'action. Abonnez-vous dès maintenant sur CinéFlix."
+    />
+    <meta name="twitter:image" content="hero-action.jpg" />
+    <meta name="twitter:site" content="@CinéFlix" />
+
+    <title>CinéFlix - Action</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.png" />
+    <!---------------------------------------------------------- Lien AOS ------------------------------------------------------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!---------------------------------------------------------- Lien bootsrap ------------------------------------------------------------------->
+    <script
+      src="https://kit.fontawesome.com/cd8dd3426c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- LIENS DES FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/comedie.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"><!--feuille de style bootstrap css-->
+</head>
+<body>
+     <!------------------------------------------------------------- NAVBAR --------------------------------------------------------------------------------------------->
+     <nav
+     class="navbar bg-dark navbar-expand-lg bg-body-tertiary navbar-custom"
+     data-bs-theme="dark"
+   >
+     <div class="container-fluid">
+       <a class="navbar-brand" href="#">
+         <img src="../img/cineflix.jpeg" alt="Bootstrap" width="auto" height="50" />
+       </a>
+       <button
+         class="navbar-toggler"
+         type="button"
+         data-bs-toggle="collapse"
+         data-bs-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent"
+         aria-expanded="false"
+         aria-label="Toggle navigation"
+       >
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="../index.html"
+               >Accueil
+             </a>
+           </li>
+           <li
+             class="nav-link disabled trait"
+             aria-disabled="true"
+             style="color: white"
+           >
+             |
+           </li>
+           <li class="nav-item">
+             <a
+               class="nav-link active actioncolor"
+               aria-current="page"
+               href="action.html"
+               >Action</a
+             >
+           </li>
+           <li class="nav-item">
+             <a
+               class="nav-link active horrorcolor"
+               aria-current="page"
+               href="horreur.html"
+               >Horreur</a
+             >
+           </li>
+           <li class="nav-item">
+             <a
+               class="nav-link active comediecolor"
+               aria-current="page"
+               href="#"
+               >Comédie</a
+             >
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active scificolor" aria-current="page" href="science_fiction.html"
+               >Science-Fiction</a
+             >
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active dramacolor" aria-current="page" href="drama_index.html"
+               >Drama</a
+             >
+           </li>
+           <li class="nav-item">
+             <a
+               class="nav-link active romancecolor"
+               aria-current="page"
+               href="romance.html"
+               >Romance</a
+             >
+           </li>
+         </ul>
+         <a href="./inscription.html" target="_blank">
+         <button class="glow-on-hover" type="button">connection</button>
+         </a>
+       </div>
+     </div>
+   </nav>
+   <!------------------------------------------------------------- FIN NAVBAr--------------------------------------------------------------------------------------------->
+    <div class="container-fluid"><!--debut container-->
+        <div class="row"><!--debut row-->
+            <div class="hero" class="img-fluid">
+                <div class="col-12 col-sm-12 col-md-12"><!--debut col-->
+                    <h1>Profitez d'une vaste bibliothèque de films, séries, documentaires.Nous proposons des vidéos en haute définition (HD) et même en 4K pour une expérience visuelle immersive.Regardez vos contenus préférés où que vous soyez et sur n'importe quel appareil.
+                </h1>
+                <a href="#je m'abonne">
+                <button type="button" class="btn btn-warning">je m'abonne</button>
+            </a>
+                <div class="icone" class="col-4 col-sm-3 col-md-3">
+                    <svg
+  width="30"
+  height="30"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"><path
+    d="M20 6H4V8H2V6C2 4.89543 2.89543 4 4 4H20C21.1046 4 22 4.89543 22 6V18C22 19.1046 21.1046 20 20 20H15V18H20V6Z"
+    fill="currentColor"/><path
+    d="M2 13C5.86599 13 9 16.134 9 20H7C7 17.2386 4.76142 15 2 15V13Z"
+    fill="currentColor"/><path d="M2 17C3.65685 17 5 18.3431 5 20H2V17Z" fill="currentColor" /><path
+    d="M2 9C8.07513 9 13 13.9249 13 20H11C11 15.0294 6.97056 11 2 11V9Z"
+    fill="currentColor"
+  />
+</svg>
+<p>accès illimité</p>
+<svg
+  width="30"
+  height="30"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M19 11C18.4477 11 18 11.4477 18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11Z"
+    fill="currentColor"
+  <path
+    d="M14 12C14 11.4477 14.4477 11 15 11C15.5523 11 16 11.4477 16 12C16 12.5523 15.5523 13 15 13C14.4477 13 14 12.5523 14 12Z"
+    fill="currentColor"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M2 8C0.895431 8 0 8.89543 0 10V14C0 15.1046 0.89543 16 2 16H22C23.1046 16 24 15.1046 24 14V10C24 8.89543 23.1046 8 22 8H2ZM22 10H2L2 14H22V10Z"
+    fill="currentColor"
+  />
+</svg>
+<p>nouveautés hebdomadaires</p>
+<svg
+  width="30"
+  height="30"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M9.00967 5.12761H11.0097C12.1142 5.12761 13.468 5.89682 14.0335 6.8457L16.5089 11H21.0097C21.562 11 22.0097 11.4477 22.0097 12C22.0097 12.5523 21.562 13 21.0097 13H16.4138L13.9383 17.1543C13.3729 18.1032 12.0191 18.8724 10.9145 18.8724H8.91454L12.4138 13H5.42485L3.99036 15.4529H1.99036L4.00967 12L4.00967 11.967L2.00967 8.54712H4.00967L5.44417 11H12.5089L9.00967 5.12761Z"
+    fill="currentColor"
+  />
+</svg>
+<p>visionnage sans pub</p>
+                </div>
+                </div>
+            </div><!--fin col-->
+        </div><!--fin row-->
+    </div><!--fin container-->
+
+
+    <div class="container-image"><!--debut container-->
+        <div class="row"><!--debut row-->
+            <div class="col-12 col-sm-6 col-md-3"><!--debut col-->
+                <img src="../img/bienvenu.jpg" alt="loup-de-wall-street" class="img-fluid">
+                <p>titre</p>
+                <a href="https://www.youtube.com/results?search_query=bande+annonce+bienvenue+chez+les+ch%27tis"></a>
+                <a href="#je m'abonne">
+                <button type="button" 
+                class="btn btn-outline-warning">je m'abonne</button><!--accès"je m'abonne"-->
+            </a>
+            <a href="https://www.youtube.com/watch?v=OycTfchnopU">
+                <button type="button" class="btn btn-success">bande annonce</button>
+            </a>
+            </div><!--fin col-->
+            <div class="col-12 col-sm-6 col-md-3"><!--debut col-->
+                <img src="../img/double-zero.png" alt="snowfall" class="img-fluid">
+                <p>titre</p>
+                <a href="#je m'abonne">
+                <button type="button" 
+                class="btn btn-outline-warning">je m'abonne</button>
+            </a>
+            <a href="https://www.youtube.com/watch?v=86WNREbI-3U">
+                <button type="button" class="btn btn-success">bande annonce</button>
+            </a>
+            </div><!--fin de col-->
+            <div class="col-12 col-sm-6 col-md-3"><!--debut col-->
+                <img src="../img/la-tour.jpg" alt="snowfall-franklin" class="img-fluid">
+                <p>titre</p>
+                <a href="#je m'abonne">
+                <button type="button" 
+                class="btn btn-outline-warning">je m'abonne</button>
+            </a>
+            <a href="https://www.youtube.com/watch?v=4_Ff47nXZ0k">
+                <button type="button" class="btn btn-success">bande annonce</button>
+                </a>
+            </div><!--fin de col-->
+            <div class="col-12 col-sm-6 col-md-3"><!--debut col-->
+                <img src="../img/les-segpa.jpg" alt="deadpool" class="img-fluid">
+                <p>titre</p>
+                <a href="#je m'abonne">
+                <button type="button" 
+                class="btn btn-outline-warning">je m'abonne</button>
+            </a>
+            <a href="https://www.youtube.com/watch?v=o6XVuWUWE14">
+                <button type="button" class="btn btn-success">bande annonce</button>
+            </a>
+            </div><!--fin de col-->
+        </div><!--fin row-->
+    </div><!--fin container-->
+    <div class="container-form"><!--debut container-form-->
+    </div><!--fin container-form-->
+
+    <div class="container-prix col-12 ">
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 box-shadow ">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">essentiel</font></font></h4>
+            </div>
+            <div id="je m'abonne">
+                <!---->
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4,99€</font></font><small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/ mois</font></font></small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">accès limité</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">qualité hd</font></font></li>
+              </ul>
+              <a href="./inscription.html" target="_blank">
+              <button type="button" class="btn btn-success"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">choisir l'offre essentiel</font></font></button>
+              </a>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow ">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">standard</font></font></h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9,99€</font></font><small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/mois</font></font></small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">catalogue étendu</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">full hd</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 écrans</font></font></li>
+              </ul>
+              <a href="./inscription.html" target="_blank">
+              <button type="button" class="btn btn-warning"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">choisir l'offre standard</font></font></button>
+              </a>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow ">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">premium</font></font></h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">14,99€</font></font><small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/mois</font></font></small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">catalogue complet</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4k</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4 écrans</font></font></li>
+              </ul>
+              <a href="./inscription.html" target="_blank">
+              <button type="button" class="btn btn-danger"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">choisir l'offre premium</font></font></button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="panel panel-default widget">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-comment"></span>
+                        <h3 class="panel-title">
+                            commentaire recents:3</h3>
+                        <span class="label label-info">
+                            8.6/10</span>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-2 col-md-1">
+                                        <img src="img/com1.jpg" class="duhamel" alt="" /></div>
+                                    <div class="col-xs-10 col-md-11">
+                                        <div>
+                                            <a href="https://www.bfmtv.com/">
+                                                bfm</a>
+                                            <div class="mic-info">
+                                                <a href="https://fr.wikipedia.org/wiki/Benjamin_Duhamel#:~:text=Benjamin%20Duhamel%20est%20embauch%C3%A9%20%C3%A0,pas%20tous%20les%20jours%20dimanche.">benjamin duhamel</a>:20/11/2024
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            incroyable offre pour autant de choix
+                                        </div>
+                                        <div class="action">
+                                            <button type="button" class="btn btn-primary btn-xs" title="Edit">
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                            </button>
+                                            <button type="button" class="btn btn-success btn-xs" title="Approved">
+                                                <span class="glyphicon glyphicon-ok"></span>
+                                            </button>
+                                            <button type="button" class="btn btn-danger btn-xs" title="Delete">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-2 col-md-1">
+                                        <img src="img/com3.jpg" class="img-circle" alt="" /></div>
+                                    <div class="col-xs-10 col-md-11">
+                                        <div>
+                                            <a href="https://fr.wikipedia.org/wiki/Cabinet_du_pr%C3%A9sident_de_la_R%C3%A9publique_fran%C3%A7aise">conseil présidentiel</a>
+                                            <div class="mic-info">
+                                                <a href="https://fr.wikipedia.org/wiki/Jacques_Attali">jacques attali</a>:17/11/2024
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
+                                        </div>
+                                        <div class="action">
+                                            <button type="button" class="btn btn-primary btn-xs" title="Edit">
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                            </button>
+                                            <button type="button" class="btn btn-success btn-xs" title="Approved">
+                                                <span class="glyphicon glyphicon-ok"></span>
+                                            </button>
+                                            <button type="button" class="btn btn-danger btn-xs" title="Delete">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-xs-2 col-md-1">
+                                        <img src="img/com4.jpg" class="lenueve" alt="" /></div>
+                                    <div class="col-xs-10 col-md-11">
+                                        <div>
+                                            <a href="https://fr.wikipedia.org/wiki/Ballon_d%27or">le ballon d'or</a>
+                                            <div class="mic-info">
+                                                <a href="https://fr.wikipedia.org/wiki/Karim_Benzema">karim benzema</a>:14/11/2024
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
+                                        </div>
+                                        <div class="action">
+                                            <button type="button" class="btn btn-primary btn-xs" title="Edit">
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                            </button>
+                                            <button type="button" class="btn btn-success btn-xs" title="Approved">
+                                                <span class="glyphicon glyphicon-ok"></span>
+                                            </button>
+                                            <button type="button" class="btn btn-danger btn-xs" title="Delete">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-tuiles"><!--debut container-->
+            <div class="row"><!--debut row-->
+                    <div class="col-12 col-sm-6 col-md-4"><!--debut col-->
+                        <img src="../img/boite-noire.jpg" alt="" class="img-fluid">
+                        <p>boite noire</p>
+                        <p>analyste judiciaire obsessionnel, est déçu d'être mis à l'écart de l'examen de la boîte noire d'un avion de ligne atrian 800</p>
+                        <a href="action.html">
+                        <button class="glow-on-hover" type="button">action</button>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4"><!--debut col-->
+                        <img src="../img/classico.jpg" alt="" class="img-fluid">
+                        <p>classico</p>
+                        <p>Le film avec un mélange d'humour, de valeurs sportives et de solidarité</p>
+                        <a href="drama_index.html">
+                        <button class="glow-on-hover" type="button">drama</button>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4"><!--debut col-->
+                        <img src="../img/insidious.png" alt="" class="img-fluid">
+                        <p>insidious</p>
+                        <p>les lambert tentent de sauver leur fils tout en affrontant des forces surnaturelles terrifiantes.</p>
+                        <a href="horreur.html">
+                        <button class="glow-on-hover" type="button">horreur</button>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4"><!--debut col-->
+                        <img src="../img/tulsaking.jpg" alt="" class="img-fluid">
+                        <p>tulsa king</p>
+                        <p>Le roi de tulsa est taylor sheridan , également Sylvester stallone.</p>
+                        <a href="romance.html">
+                        <button class="glow-on-hover" type="button">romance</button>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4"><!--debut col-->
+                        <img src="../img/breaking-bad.jpg" alt="" class="img-fluid">
+                        <p>breaking bad</p>
+                        <p>la descente aux enfers d'un homme poussé par le désespoir.</p>
+                        <a href="#">
+                        <button class="glow-on-hover" type="button">comedie</button>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4"><!--debut col-->
+                        <img src="../img/alice-borderland.jpg" alt="" class="img-fluid">
+                        <p>alice in borderland</p>
+                        <p>ce monde désert est gouverné par des règles cruelles </p>
+                        <a href="science_fiction.html">
+                        <button class="glow-on-hover" type="button">science-fiction</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <!-- Main Body -->
+         <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+    ></script>
+
+</body>
+<!--------------------------------------------------------------------------------------------- FOOTERRRRR ------------------------------------------------>
+<footer class=" py-4" style="background-color: #1c1c1c; color: #ffffff; text-align: center;" >
+    <div class="container">
+      <div class="row">
+        <!-- Section Contact -->
+        <div class="col-md-4 mb-3">
+          <h5 style="color: #ffffff; font-size: 1.7rem;  font-family: Raleway, serif;">Contact</h5>
+          <ul class="list-unstyled">
+            <li><a href="mailto:cineflix@gmail.com" class="contactt">cineflix@gmail.com</a></li>
+            <li><a href="tel:+33623568955" class="contactt">+33 6 23 56 89 55</a></li>
+          </ul>
+        </div>
+  
+        <!-- Section rsx -->
+        <div class="col-md-4 mb-3" style="color: #ffffff; text-align: center;">
+          <h5 style="color: #ffffff; font-size: 1.7rem;  font-family: Raleway, serif;">Réseaux-sociaux</h5>
+          <ul class="list-unstyled d-flex gap-3 " style="text-align: center; justify-content: center;">
+            <li style="text-align: center;">
+              <a href="https://www.facebook.com/groups/448485336360350" target="_blank" style="text-align: center;">
+                <i class="bi bi-facebook rsxx"></i> 
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/cineflixcinemas/" target="_blank" style="text-align: center;">
+                <i class="bi bi-instagram rsxx"></i> 
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/cineflixz" target="_blank" style="text-align: center;">
+                <i class="bi bi-twitter-x rsxx"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Section mentions -->
+        <div class="col-md-4">
+          <h5 style="color: #ffffff; font-size: 1.7rem;  font-family: Raleway, serif;">Informations</h5>
+          <ul class="list-unstyled">
+            <li><a href="mentionslegales.html" class="  infoo" target="_blank">Mentions légales</a></li>
+            <li><a href="politiquedeco.html" class=" infoo" target="_blank">Politique de confidentialité</a></li>
+            <li><a href="a-propos.html" class="  infoo" target="_blank">À propos</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Ligne de séparation -->
+      <hr class="bg-secondary my-3" style="color: #db2929;">
+  
+      <!-- Copyright -->
+      <div class="text-center">
+        <small>© 2024 CinéFlix. Tous droits réservés.</small>
+      </div>
+    </div>
+  </footer>
+</html>
