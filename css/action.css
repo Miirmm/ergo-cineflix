@@ -385,64 +385,34 @@ body {
 }
 
 /*************************************************************** FIN SECTION AVIS ******************************************************/
-.video-container {
+.video-section {
   position: relative;
-  width: 100%;
-  max-width: 100%;
-  height: 500px; /* Ajustez selon vos besoins */
+  min-height: 100vh;
   overflow: hidden;
 }
 
-.filmss {
-  margin-top: -600px;
+.video-section video {
+  object-fit: cover;
 }
 
-.sectionadr {
-  margin-bottom: -100px;
-}
-@media (max-width: 1500px) {
-  .filmss {
-    margin-top: -900px;
-  }
-  .sectionadr {
-    margin-bottom: -400px;
-  }
-}
-@media (max-width: 768px) {
-  .video-container {
-    display: none;
-  }
-  .filmss {
-    margin-top: -60px;
-  }
-  .sectionadr {
-    margin-bottom: 0px;
-  }
+.video-section .container {
+  z-index: 5; /* Place le contenu au-dessus de la vidéo */
 }
 
-.video-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Permet à la vidéo de remplir le conteneur */
-}
-
-.video-container .video-overlay {
+.video-section::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.651); /* 50% opacité noire */
-  z-index: 1;
-}
-
-.video-container .video-text {
-  position: absolute;
-  top: 20%; /* Positionnez le texte à 20% de la hauteur de la vidéo */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  text-align: center;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Filtre noir semi-transparent sur la vidéo */
+  z-index: 0; /* Le filtre est au-dessus de la vidéo mais derrière le contenu */
 }
 
 /*************************************************************************** TUILES **************************************************************/
