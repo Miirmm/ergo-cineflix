@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CinéFlix - Découvrez les meilleurs films de Romance et bien plus encore. Abonnez-vous pour une expérience cinématographique inoubliable." />
+    <!-- Balises Open Graph pour les réseaux sociaux -->
+    <meta
+      property="og:title"
+      content="CinéFlix - Romance" />
+    <meta
+      property="og:description"
+      content="Regardez les meilleurs films de Romance sur CinéFlix. Abonnez-vous pour une expérience cinématographique inégalée !" />
+    <meta property="og:image" content="hero-action.jpg" />
+    <!-- Chemin vers une image de partage -->
+    <meta property="og:url" content="https://www.cineflix.com/action" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CinéFlix" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="CinéFlix - Plongez au cœur de Romance" />
+    <meta
+      name="twitter:description"
+      content="Découvrez une sélection explosive de films d'action. Abonnez-vous dès maintenant sur CinéFlix." />
+    <meta name="twitter:image" content="hero-action.jpg" />
+    <meta name="twitter:site" content="@CinéFlix" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.png" />
+    <!---------------------------------------------------------- Lien AOS ------------------------------------------------------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!---------------------------------------------------------- Lien bootsrap ------------------------------------------------------------------->
+
+    <script
+      src="https://kit.fontawesome.com/cd8dd3426c.js"
+      crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+   
+
+    <!-- LIENS DES FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <title>Ciné flix-Romance</title>
+    <link rel="stylesheet" href="../css/romance.css" />
+    <style>
+      .film {
+        transition: transform 0.3s ease-in-out;
+      }
+      .film:hover {
+        transform: translateY(-20px);
+      }
+    </style>
+  </head>
+  <body>
+    <!------------------------------------------------------------- NAVBAR --------------------------------------------------------------------------------------------->
+    <nav
+      class="navbar bg-dark navbar-expand-lg bg-body-tertiary navbar-custom"
+      data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Bootstrap" width="auto" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Accueil
+              </a>
+            </li>
+            <li
+              class="nav-link disabled trait"
+              aria-disabled="true"
+              style="color: white">
+              |
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active actioncolor"
+                aria-current="page"
+                href="action.html"
+                >Action</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active horrorcolor"
+                aria-current="page"
+                href="#"
+                >Horreur</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active comediecolor"
+                aria-current="page"
+                href="#"
+                >Comédie</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active scificolor" aria-current="page" href="#"
+                >Science-Fiction</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active dramacolor" aria-current="page" href="#"
+                >Drama</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active romancecolor"
+                aria-current="page"
+                href="#"
+                >Romance</a
+              >
+            </li>
+          </ul>
+          <button class="btn btn-outline-dark btncnx" type="button">
+            Connexion
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!------------------------------------------------------------- FIN NAVBAR --------------------------------------------------------------------------------------------->
+    <div id="bannière">
+      <div class="image-container">
+        <img
+          class="image-container"
+          src="../img/love_.jpg"
+          alt="bannière-de-film"
+          class="img-fluid" />
+      </div>
+      <div id="titre">
+        <h1>
+            Bienvenue sur CinéFlix</h1>
+        <p>
+            Plongez dans l'univers des films de romance, où chaque histoire fait vibrer le cœur. Des classiques intemporels aux nouveautés captivantes, découvrez des récits d'amour qui vous feront rêver, sourire et ressentir. Préparez-vous à vivre des émotions inoubliables !
+        </p>
+        <button type="button" class="btn btn-secondary btn-lg">
+          Je m'abonne
+        </button>
+      </div>
+    </div>
+    <!---------------------fin hero---------------------------------------------->
+    <!-----------------------début avantage---------------------------------->
+    <p class="text">
+      <img src="img/camescope.png" alt="camera" />
+      Découvrez les dernières nouveautés sans interruption publicitaire, le tout
+      avec une qualité d'image exceptionnelle en HD et 4K. Une immersion totale
+      pour des moments de cinéma uniques, directement depuis chez vous !
+    </p>
+    <div id="avantage">
+      <div class="avan">
+        <img src="../img/infini.png" alt="infini" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
+          facere iure et, excepturi ducimus repellat? Facilis quibusdam culpa
+          quod quia repellendus magni, veniam esse neque, a voluptatum illo
+          tempore ut.
+        </p>
+      </div>
+      <div class="avan">
+        <img src="../img/mettre-a-jour.png" alt="infini" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
+          facere iure et, excepturi ducimus repellat? Facilis quibusdam culpa
+          quod quia repellendus magni, veniam esse neque, a voluptatum illo
+          tempore ut.
+        </p>
+      </div>
+      <div class="avan avan3">
+        <img src="../img/pub.png" alt="infini" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
+          facere iure et, excepturi ducimus repellat? Facilis quibusdam culpa
+          quod quia repellendus magni, veniam esse neque, a voluptatum illo
+          tempore ut.
+        </p>
+      </div>
+    </div>
+    <!--------------------------fin avantage--------------------------->
+    <!--------------------------debut film------------------------------->
+    <h2>Film en Vedette</h2>
+
+    <div class="cat">
+      <div class="col-2 film">
+       
+        <img src="../img/amour-ouf.webp" alt="amour-ouf" />
+      </div>
+      <div class="col-2 film">
+       
+        <img src="../img/etoile.jpeg" alt="amour-ouf" />
+      </div>
+      <div class="col-2 filml film">
+        <img src="../img/enten.jpg" alt="amour-ouf" />
+      </div>
+      <div class="col-2 filml film">
+        <img src="../img/yourname.jpg" alt="amour-ouf" />
+      </div>
+    </div>
+    <!------------------------------fin film--------------------------->
+    <!-------------------------------debut abonnement----------------->
+    <h2>Nos abonnement</h2>
+    <div id="abo">
+      <div class="col col7">
+        <h3><strong> Essentiel</strong></h3>
+        <p>Accès limité au catalogue, qualité HD.</p>
+        <p>4,99€ / Mois</p>
+        <p>Accès limité au catalogue</p>
+        <p>Qualité HD</p>
+        <p>1 écran</p>
+        <button type="button" class="btn btn-secondary">Je m'abonne</button>
+      </div>
+      <div class="col col7">
+        <h3><strong>Standard</strong></h3>
+        <p>Catalogue étendu, Full HD, 2 écrans simultanés</p>
+        <p>9,99€ / Mois</p>
+        <p>Catalogue étendu</p>
+        <p>Full HD</p>
+        <p>2 écrans simultanés</p>
+        <button type="button" class="btn btn-secondary">Je m'abonne</button>
+      </div>
+      <div class="col col7 colprem">
+        <h3><strong>Premium</strong></h3>
+        <p>Catalogue complet, 4K, 4 écrans simultanés.</p>
+
+        <p>14,99€ / Mois</p>
+        <p>Catalogue complet</p>
+        <p>4K</p>
+        <p>4 écrans simultanés</p>
+        <button type="button" class="btn btn-secondary">Je m'abonne</button>
+      </div>
+    </div>
+    <!--------------------------------------fin abonnement---------------------------->
+    <!----------------------------------debut avis client------------------------------>
+    <h2>Avis Clients</h2>
+    <div class="dis">
+      <div class="com">
+        <img src="../img/ours.jpg" alt="Avatar" style="width: 90px" />
+        <p><span>Bear</span></p>
+        <p>
+          "Un chef-d'œuvre absolu ! Le scénario est captivant, les acteurs sont
+          incroyables et la bande-son m'a transporté. Chaque scène est comme une
+          œuvre d'art. Je le recommande à 100% pour tous les amateurs de cinéma
+          !"
+        </p>
+      </div>
+      <div class="com">
+        <img src="../img/ppt.jpg " alt="Avatar" style="width: 90px" />
+        <p><span>Musachi miyamoto</span></p>
+        <p>
+          "Un film parfait pour une soirée détente ! Ce n'est peut-être pas
+          révolutionnaire, mais l'action et les rebondissements sont très
+          efficaces. J'ai passé un super moment et je ne me suis pas ennuyé une
+          seule seconde."
+        </p>
+      </div>
+      <div class="com">
+        <img src="../img/ronaldo.jpg" alt="Avatar" style="width: 90px" />
+        <p><span>SIUUUUUU</span></p>
+        <p>
+          "L'idée de départ était prometteuse, mais le film peine à tenir sur la
+          durée. Les personnages manquent un peu de profondeur, et certaines
+          scènes sont trop visibles. Dommage, car la photographie et les décors
+          étaient superbes."
+        </p>
+      </div>
+      <div class="com">
+        <img src="../img/msr.jpg" alt="Avatar" style="width: 90px" />
+        <p><span>Robert</span></p>
+        <p>
+          "Honnêtement, j'attendais beaucoup plus. Le rythme est trop lent, et
+          l'histoire peine à captiver. Même les acteurs n'ont pas réussi à
+          sauver le film. À éviter, sauf si vous êtes un grand fan du
+          réalisateur."
+        </p>
+      </div>
+    </div>
+    <!------------------------------------fin avis client-------------------->
+    <!-------------------------------------autre film------------------------>
+    <h3 id="genre">Autre Genre</h3>
+ 
+      <div class="genr">
+        <div class="col abo abo1">
+          <h3>Action</h3>
+          <p>
+            Découvrez les meilleurs films d'action avec des cascades
+            spectaculaires, des combats intenses et des scénarios palpitants
+          </p>
+          <button type="button" class="btn btn-secondary btn-lg btnj">
+            Explorer
+          </button>
+        </div>
+        <div class="col abo abo1">
+          <h3>Science-Fiction</h3>
+          <p>
+            Explorez l'univers captivant de la science-fiction : mondes
+            futuristes, technologies avancées et aventures interstellaires.
+          </p>
+          <button type="button" class="btn btn-secondary btn-lg btnj">
+            Explorer
+          </button>
+        </div>
+        <div class="col abo abo1">
+          <h3>Comédie</h3>
+          <p>
+            Plongez dans l'univers de la comédie avec des films hilarants et
+            des scènes mémorables. Des situations loufoques, des personnages
+            attachants et des dialogues
+          </p>
+          <button type="button" class="btn btn-secondary btn-lg btnh">
+            Explorer
+          </button>
+        </div>
+       
+   
+  </div>
+  <div class="container">
+    <div class="row po ">
+      <div class="col abo">
+        <h3>Dramatique</h3>
+        <p>
+          Découvrez des films dramatiques intenses, où émotions profondes et
+          récits captivants s'entrelacent. Plongez dans des histoires
+          bouleversantes, des personnages marquants et des moments qui
+          restent gravés longtemps après le générique.
+        </p>
+        <button type="button" class="btn btn-secondary btn-lg btnl">
+          Explorer
+        </button>
+      </div>
+      <div class="col abo">
+        <h3>Horreur</h3>
+        <p>
+          Entrez dans le monde terrifiant des films d'horreur : frissons
+          garantis, créatures inquiétantes et suspense insoutenable.
+          Explorez des classiques glaçants et les dernières nouveautés pour
+          une expérience à faire trembler même les plus courageux.
+        </p>
+        <button type="button" class="btn btn-secondary btn-lg btnl">
+          Explorer
+        </button>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!--------------------------------------autre film(-------------------------------------)-->
+  <!------------------------------------- debut livre------------------------------------------>
+  <h2 id="vre">Nos livre recommander</h2>
+
+    <div class="container">
+        <div class="row li">
+          <div class="col book">
+            <h3 class="ti">Ce que le jour doit a la nuit</h3>
+            <a href="https://www.fnac.com/SearchResult/ResultList.aspx?Search=ce+que+le+jour+doit+a+la+nuit&sft=1&sa=0" target="_blank" >
+            <img class="livre" src="../img/yasmina.jpg" alt="" />
+        </a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+              porro eius perferendis quam, consequatur adipisci officiis quia at
+              explicabo reiciendis inventore deleniti, vel odit nam, magni modi
+              quos asperiores blanditiis!
+            </p>
+          </div>
+        <div class="col book">
+            <h3 class="ti">Borderline</h3>
+            <a href="https://www.fnac.com/SearchResult/ResultList.aspx?Search=bordernline&sft=1&sa=0" target="_blank" >
+            <img class="livre" src="../img/borderline.jpg" alt="" /> </a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              animi ea dolorum molestias! Ad laborum optio, ab tempore corporis
+              ipsa reiciendis vitae similique, ullam fugiat repellendus, vero
+              accusamus quam sapiente!
+            </p>
+          </div>
+          <div class="col book">
+            <h3 class="ti">Hate to love</h3> <a href="https://www.fnac.com/SearchResult/ResultList.aspx?Search=hhate+to+love&sft=1&sa=0">
+            <img class="livre" src="../img/hate.jpeg" alt="" /></a>
+               <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+              eius quaerat possimus quidem numquam officia laudantium, sequi
+              tenetur iure debitis dignissimos iusto illo labore alias quas
+              natus quis eum. Quidem!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!------------------------------------------finss livre--------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------- FOOTERRRRR ------------------------------------------------>
+  <footer class=" py-4" style="background-color: #1c1c1c; color: #ffffff; text-align: center;" >
+    <div class="container">
+      <div class="row">
+        <!-- Section Contact -->
+        <div class="col-md-4 mb-3">
+          <h5 style="color: #ffffff; font-size: 1.7rem;  font-family: Raleway, serif;">Contact</h5>
+          <ul class="list-unstyled">
+            <li><a href="mailto:cineflix@gmail.com" class="contactt">cineflix@gmail.com</a></li>
+            <li><a href="tel:+33623568955" class="contactt">+33 6 23 56 89 55</a></li>
+          </ul>
+        </div>
+  
+        <!-- Section rsx -->
+        <div class="col-md-4 mb-3" style="color: #ffffff; text-align: center;">
+          <h5 style="color: #ffffff; font-size: 1.7rem;  font-family: Raleway, serif;">Réseaux-sociaux</h5>
+          <ul class="list-unstyled d-flex gap-3 " style="text-align: center; justify-content: center;">
+            <li style="text-align: center;">
+              <a href="https://www.facebook.com/groups/448485336360350" target="_blank" style="text-align: center;">
+                <i class="bi bi-facebook rsxx"></i> 
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/cineflixcinemas/" target="_blank" style="text-align: center;">
+                <i class="bi bi-instagram rsxx"></i> 
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/cineflixz" target="_blank" style="text-align: center;">
+                <i class="bi bi-twitter-x rsxx"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Section mentions -->
+        <div class="col-md-4">
+          <h5 style="color: #ffffff; font-size: 1.7rem;  font-family: Raleway, serif;">Informations</h5>
+          <ul class="list-unstyled">
+            <li><a href="mentionslegales.html" class="  infoo" target="_blank">Mentions légales</a></li>
+            <li><a href="politiquedeco.html" class=" infoo" target="_blank">Politique de confidentialité</a></li>
+            <li><a href="a-propos.html" class="  infoo" target="_blank">À propos</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Ligne de séparation -->
+      <hr class="bg-secondary my-3" style="color: #db2929;">
+  
+      <!-- Copyright -->
+      <div class="text-center">
+        <small>© 2024 CinéFlix. Tous droits réservés.</small>
+      </div>
+    </div>
+  </footer>
+  
+  </body>
+</html>
