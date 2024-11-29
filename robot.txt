@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /mentionlegales politiquedeco
+
+Sitemap: https://www.cineflix.fr/sitemap.xml
