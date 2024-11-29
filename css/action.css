@@ -387,7 +387,7 @@ body {
 /*************************************************************** FIN SECTION AVIS ******************************************************/
 .video-section {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   overflow: hidden;
 }
 
