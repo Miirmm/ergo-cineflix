@@ -107,7 +107,7 @@ body {
   }
 
   .arriere_plan{
-    background-image: url(img/joker_escalier_arriere_plan.jpg);
+    background-image: url(../img/joker_escalier_arriere_plan.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: top center;
